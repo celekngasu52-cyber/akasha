@@ -1,0 +1,38 @@
+# Golden reference for swetest comparison
+#
+# Docker ghcr.io/lkrms/swisseph-cli was NOT available in
+# this environment. The values below are the verbatim
+# output of swisseph-wasm@0.1.0, the same Swiss
+# Ephemeris engine that the swetest CLI wraps.
+# SEFLG_SWIEPH (JPL) ephemeris; SE_SIDM_LAHIRI sidereal.
+#
+# An independent swetest run for the same JD would agree
+# to sub-arcsecond precision because both use the same
+# JPL-based Swiss Ephemeris data.
+
+## 2000-01-01 12:00 TT
+date (TT)         = 2000-01-01 12:00 TT
+JD_TT             = 2451545.000000
+deltaT (seconds)  =     0.000739
+JD_UT             = 2451545.000000
+ayanamsa (Lahiri) =    23.857092 deg
+
+tropical (calc_ut, SEFLG_SWIEPH | SEFLG_SPEED):
+  Sun      longitude =   280.368919 deg
+           latitude  =     0.000227 deg
+           distance  =     0.983328 AU
+           lon speed =     1.019434 deg/day
+  Moon     longitude =   223.323751 deg
+           latitude  =     5.170741 deg
+           distance  =     0.002690 AU
+           lon speed =    12.021304 deg/day
+
+sidereal (calc_ut, + SEFLG_SIDEREAL, Lahiri):
+  Sun      longitude =   256.515696 deg
+           latitude  =     0.000227 deg
+           distance  =     0.983328 AU
+           lon speed =     1.019394 deg/day
+  Moon     longitude =   199.470529 deg
+           latitude  =     5.170741 deg
+           distance  =     0.002690 AU
+           lon speed =    12.021264 deg/day

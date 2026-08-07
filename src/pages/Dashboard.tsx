@@ -35,6 +35,8 @@ export interface DashboardProps {
   onReset: () => void
   /** Open the printable "Laporan Lengkap" report (optional). */
   onOpenReport?: () => void
+  /** Open the two-person compatibility "Jodoh" page (optional). */
+  onOpenCompatibility?: () => void
   /** Open the saved-profile collection (optional). */
   onOpenCollection?: () => void
 }
@@ -64,6 +66,7 @@ export function Dashboard({
   birthData,
   onReset,
   onOpenReport,
+  onOpenCompatibility,
   onOpenCollection,
 }: DashboardProps): React.ReactNode {
   const [tab, setTab] = useState<string>('harian')
@@ -99,6 +102,11 @@ export function Dashboard({
           {onOpenCollection ? (
             <Button variant="ghost" size="sm" onClick={onOpenCollection}>
               Koleksi
+            </Button>
+          ) : null}
+          {onOpenCompatibility ? (
+            <Button variant="ghost" size="sm" onClick={onOpenCompatibility}>
+              Jodoh
             </Button>
           ) : null}
           {onOpenReport ? (

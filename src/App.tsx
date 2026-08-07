@@ -3,12 +3,14 @@ import { InputPage } from './pages/InputPage'
 import { Dashboard } from './pages/Dashboard'
 import { Report } from './pages/Report'
 import { Collection } from './pages/Collection'
+import { Compatibility } from './pages/Compatibility'
 import type { BirthData } from './core/birth'
 
 type Route =
   | { name: 'input' }
   | { name: 'dashboard'; birthData: BirthData }
   | { name: 'report'; birthData: BirthData }
+  | { name: 'compat'; birthData: BirthData }
   | { name: 'collection' }
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         birthData={route.birthData}
         onReset={() => setRoute({ name: 'input' })}
         onOpenReport={() => setRoute({ name: 'report', birthData: route.birthData })}
+        onOpenCompatibility={() => setRoute({ name: 'compat', birthData: route.birthData })}
         onOpenCollection={() => setRoute({ name: 'collection' })}
       />
     )
@@ -29,6 +32,15 @@ function App() {
     return (
       <Report
         birthData={route.birthData}
+        onBack={() => setRoute({ name: 'dashboard', birthData: route.birthData })}
+      />
+    )
+  }
+
+  if (route.name === 'compat') {
+    return (
+      <Compatibility
+        birthDataA={route.birthData}
         onBack={() => setRoute({ name: 'dashboard', birthData: route.birthData })}
       />
     )

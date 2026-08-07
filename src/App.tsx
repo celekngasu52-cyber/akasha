@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import { InputPage } from './pages/InputPage'
 import { Dashboard } from './pages/Dashboard'
 import type { BirthData } from './core/birth'

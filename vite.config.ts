@@ -7,17 +7,21 @@ import { VitePWA } from 'vite-plugin-pwa'
 // base '/akasha/' dipakai saat dijalankan di GitHub Actions (CI build
 // untuk GitHub Pages di https://<user>.github.io/akasha/). Lokal tetap '/'
 // agar dev server & PWA tidak terpengaruh.
+const isCI = process.env.GITHUB_ACTIONS === 'true'
+const base = isCI ? '/akasha/' : '/'
+
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS ? '/akasha/' : '/',
+  base,
   plugins: [
     react(),
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
       // Cache-first for static assets; network-first fallback for navigations.
+      // navigateFallback must match base — /akasha/ on GitHub Pages, / locally.
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,woff2}'],
-        navigateFallback: '/index.html',
+        navigateFallback: isCI ? '/akasha/index.html' : '/index.html',
         navigateFallbackDenylist: [/^\/api/],
         runtimeCaching: [
           {

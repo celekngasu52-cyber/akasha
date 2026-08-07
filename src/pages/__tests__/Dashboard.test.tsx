@@ -24,6 +24,7 @@ const STUB_BIRTH: BirthData = {
   timeISO: '12:00',
   lat: -6.2,
   lng: 106.8,
+  tzIANA: 'Asia/Jakarta',
   placeName: 'Jakarta',
   isTimeEstimated: false,
 }

@@ -32,6 +32,8 @@ export interface DashboardProps {
   birthData: BirthData
   /** Return to the input page. */
   onReset: () => void
+  /** Open the printable "Laporan Lengkap" report (optional). */
+  onOpenReport?: () => void
 }
 
 const TAB_ITEMS = [
@@ -55,7 +57,10 @@ function scoreColor(score: number): string {
   return 'var(--aka-danger)'
 }
 
-export function Dashboard({ onReset }: DashboardProps): React.ReactNode {
+export function Dashboard({
+  onReset,
+  onOpenReport,
+}: DashboardProps): React.ReactNode {
   const [tab, setTab] = useState<string>('harian')
   const { isDark, toggle } = useDarkMode()
   const data = useMemo(() => buildDashboardData(), [])
@@ -75,6 +80,11 @@ export function Dashboard({ onReset }: DashboardProps): React.ReactNode {
           <Button variant="ghost" size="sm" onClick={toggle} aria-label="Ganti tema">
             {isDark ? '☀' : '☾'}
           </Button>
+          {onOpenReport ? (
+            <Button variant="ghost" size="sm" onClick={onOpenReport}>
+              Laporan Lengkap
+            </Button>
+          ) : null}
           <Button variant="ghost" size="sm" onClick={onReset}>
             ← Ubah data
           </Button>

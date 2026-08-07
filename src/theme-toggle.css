@@ -1,0 +1,24 @@
+/*
+ * Akasha light theme override (todo 18).
+ *
+ * The default --aka-* tokens in theme.css are dark (warm near-black ink).
+ * Adding the `.light` class on <html> swaps to a light parchment variant of
+ * the same hue family — NOT a new palette. All token names stay identical so
+ * every component that reads var(--aka-*) adapts without code changes.
+ *
+ * Derived by inverting luminance while keeping the ochre hue: ink -> paper,
+ * parchment-text -> ink, ochre accent deepens for contrast on light bg.
+ */
+
+html.light {
+  --aka-bg: #f5efe0;
+  --aka-surface: #ede5d2;
+  --aka-surface-2: #e4dabd;
+  --aka-fg: #1a1612;
+  --aka-muted: #6b5a44;
+  --aka-accent: #a85e26;
+  --aka-accent-fg: #f5efe0;
+  --aka-accent-soft: #e4dabd;
+  --aka-border: #c4b89e;
+  --aka-border-strong: #8a7a5e;
+}

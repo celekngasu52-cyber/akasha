@@ -17,6 +17,8 @@ import { useMemo, useState } from 'react'
 import type { BirthData } from '../core/birth'
 import { Section, Tabs, Button } from '../components/ui'
 import { DomainCard } from '../components/DomainCard'
+import { GlossaryPopover } from '../components/GlossaryPopover'
+import { useDarkMode } from '../hooks/useDarkMode'
 import {
   buildDashboardData,
   DASHBOARD_DOMAINS,
@@ -38,7 +40,7 @@ const TAB_ITEMS = [
 
 export function Dashboard({ onReset }: DashboardProps): React.ReactNode {
   const [tab, setTab] = useState<string>('harian')
-  // Build once — deterministic mock; recompute only if birthData later feeds it.
+  const { isDark, toggle } = useDarkMode()
   const data = useMemo(() => buildDashboardData(), [])
   const active = data.find((d) => d.horizon === tab) ?? data[0]!
 
@@ -50,9 +52,14 @@ export function Dashboard({ onReset }: DashboardProps): React.ReactNode {
           value={tab}
           onChange={setTab}
         />
-        <Button variant="ghost" size="sm" onClick={onReset}>
-          ← Ubah data
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button variant="ghost" size="sm" onClick={toggle} aria-label="Ganti tema">
+            {isDark ? '☀' : '☾'}
+          </Button>
+          <Button variant="ghost" size="sm" onClick={onReset}>
+            ← Ubah data
+          </Button>
+        </div>
       </div>
 
       {/* Horizon tlDr — built via narrative.buildTlDr, shown per tab */}
@@ -64,7 +71,8 @@ export function Dashboard({ onReset }: DashboardProps): React.ReactNode {
           className="font-mono text-xs uppercase tracking-widest"
           style={{ color: 'var(--aka-accent)' }}
         >
-          tlDr — {active.horizon}
+          tlDr — {active.horizon}{' '}
+          <GlossaryPopover term="agreement score" label="?" />
         </p>
         <p
           className="mt-1 font-body text-base"

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Akasha">
+  <rect width="512" height="512" fill="#1a1612"/>
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#c8763a" stroke-width="10"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#6b5a44" stroke-width="5"/>
+  <g stroke="#c8763a" stroke-width="6" stroke-linecap="round">
+    <line x1="256" y1="56" x2="256" y2="96"/>
+    <line x1="256" y1="416" x2="256" y2="456"/>
+    <line x1="56" y1="256" x2="96" y2="256"/>
+    <line x1="416" y1="256" x2="456" y2="256"/>
+    <line x1="115" y1="115" x2="143" y2="143"/>
+    <line x1="369" y1="369" x2="397" y2="397"/>
+    <line x1="397" y1="115" x2="369" y2="143"/>
+    <line x1="143" y1="369" x2="115" y2="397"/>
+  </g>
+  <path d="M256 150 L282 230 L362 256 L282 282 L256 362 L230 282 L150 256 L230 230 Z" fill="#c8763a"/>
+  <circle cx="256" cy="256" r="20" fill="#1a1612"/>
+</svg>

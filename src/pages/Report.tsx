@@ -13,7 +13,11 @@
 import { useEffect } from 'react'
 import type { BirthData } from '../core/birth'
 import { Card, Badge, Button } from '../components/ui'
-import { computeFourPillars, computeStrength } from '../engines/bazi'
+import {
+  computeFourPillars,
+  computeStrength,
+  computeTenGods,
+} from '../engines/bazi'
 import {
   buildDashboardData,
   buildDailyForecast,
@@ -57,6 +61,7 @@ function scoreColor(score: number): string {
 export function Report({ birthData, onBack }: ReportProps): React.ReactNode {
   const pillars = computeFourPillars(birthData)
   const strength = computeStrength(pillars)
+  const tenGods = computeTenGods(birthData)
   const horizons = buildDashboardData()
   const daily = buildDailyForecast()
 
@@ -144,6 +149,29 @@ export function Report({ birthData, onBack }: ReportProps): React.ReactNode {
             Kekuatan Hari Utama: {VERDICT_LABELS[strength.verdict] ?? strength.verdict}{' '}
             (skor {strength.score > 0 ? `+${strength.score}` : strength.score}).
           </p>
+          <div className="border-t-2 border-border pt-2">
+            <span
+              className="font-mono text-xs uppercase tracking-widest"
+              style={{ color: 'var(--aka-accent)' }}
+            >
+              Sepuluh Dewa (十神)
+            </span>
+            <div className="mt-2 grid grid-cols-1 gap-1 md:grid-cols-2">
+              {[
+                { label: 'Tahun', tg: tenGods.year },
+                { label: 'Bulan', tg: tenGods.month },
+                { label: 'Hari', tg: tenGods.day },
+                { label: 'Jam', tg: tenGods.hour },
+              ].map((t) => (
+                <p key={t.label} className="font-body text-sm">
+                  <span className="font-mono" style={{ color: 'var(--aka-muted)' }}>
+                    {t.label}:
+                  </span>{' '}
+                  {t.tg.stem} · {t.tg.branches.join(', ')}
+                </p>
+              ))}
+            </div>
+          </div>
         </Card>
       </section>
 
@@ -211,6 +239,37 @@ export function Report({ birthData, onBack }: ReportProps): React.ReactNode {
             </Card>
           ))}
         </div>
+      </section>
+
+      {/* Methodology + glossary appendix */}
+      <section className="print-avoid-break mb-8">
+        <h2
+          className="font-display mb-3 text-xl"
+          style={{ color: 'var(--aka-fg)' }}
+        >
+          Metodologi & Glosarium
+        </h2>
+        <Card className="print-avoid-break flex flex-col gap-3">
+          <p className="font-body text-sm">
+            Akasha memadukan empat tradisi astrologi independen — BaZi (China),
+            Zi Wei Dou Shu (China), Vedic (India), dan Western (Barat). Setiap
+            sistem dihitung terpisah dari data kelahiran Anda, lalu disintesis
+            menjadi skor persetujuan di empat ranah: Karier, Cinta, Kesehatan,
+            dan Keuangan.
+          </p>
+          <p className="font-body text-sm">
+            Day Master (日主) adalah unsur inti diri Anda, ditentukan oleh batang
+            hari kelahiran. Empat Pilar (四柱) memetakan energi tahun, bulan,
+            hari, dan jam kelahiran. Sepuluh Dewa (十神) membaca hubungan setiap
+            pilar terhadap Day Master. Persetujuan lintas sistem dianggap sinyal
+            yang lebih kuat daripada satu tradisi saja.
+          </p>
+          <p className="font-body text-sm">
+            Semua perhitungan berjalan lokal di perangkat Anda; data kelahiran
+            tidak pernah dikirim ke server. Ramalan bersifat informatif, bukan
+            pengganti keputusan medis, hukum, atau keuangan.
+          </p>
+        </Card>
       </section>
 
       <footer

@@ -15,7 +15,10 @@ import { describe, it, expect } from 'vitest'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { createElement } from 'react'
 import { Report } from '../Report'
-import { computeFourPillars } from '../../engines/bazi'
+import {
+  computeFourPillars,
+  computeTenGods,
+} from '../../engines/bazi'
 import type { BirthData } from '../../core/birth/types'
 
 const STUB_BIRTH: BirthData = {
@@ -51,6 +54,23 @@ describe('Report — Laporan Lengkap', () => {
       expect(html).toContain(p.ganZhi)
     }
     expect(html).toContain('Kekuatan Hari Utama')
+  })
+
+  it('renders the ten gods for every pillar', () => {
+    const tenGods = computeTenGods(STUB_BIRTH)
+    const html = renderReport()
+    for (const tg of [tenGods.year, tenGods.month, tenGods.day, tenGods.hour]) {
+      expect(html).toContain(tg.stem)
+    }
+    expect(html).toContain('Sepuluh Dewa')
+  })
+
+  it('includes the methodology & glossary appendix', () => {
+    const html = renderReport()
+    // React escapes '&' in static markup, so match the escaped form.
+    expect(html).toContain('Metodologi &amp; Glosarium')
+    expect(html).toContain('Day Master')
+    expect(html).toContain('Empat Pilar')
   })
 
   it('renders the 7-day daily forecast with all day rows', () => {

@@ -21,6 +21,7 @@ import { Section, Tabs, Button, Card, Badge } from '../components/ui'
 import { DomainCard } from '../components/DomainCard'
 import { GlossaryPopover } from '../components/GlossaryPopover'
 import { useDarkMode } from '../hooks/useDarkMode'
+import { saveProfile } from '../lib/profileStore'
 import {
   buildDashboardData,
   buildDailyForecast,
@@ -34,6 +35,8 @@ export interface DashboardProps {
   onReset: () => void
   /** Open the printable "Laporan Lengkap" report (optional). */
   onOpenReport?: () => void
+  /** Open the saved-profile collection (optional). */
+  onOpenCollection?: () => void
 }
 
 const TAB_ITEMS = [
@@ -58,10 +61,13 @@ function scoreColor(score: number): string {
 }
 
 export function Dashboard({
+  birthData,
   onReset,
   onOpenReport,
+  onOpenCollection,
 }: DashboardProps): React.ReactNode {
   const [tab, setTab] = useState<string>('harian')
+  const [saved, setSaved] = useState(false)
   const { isDark, toggle } = useDarkMode()
   const data = useMemo(() => buildDashboardData(), [])
   // Captures "today" at first render; rolls forward on reload.
@@ -80,6 +86,21 @@ export function Dashboard({
           <Button variant="ghost" size="sm" onClick={toggle} aria-label="Ganti tema">
             {isDark ? '☀' : '☾'}
           </Button>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => {
+              saveProfile(birthData)
+              setSaved(true)
+            }}
+          >
+            {saved ? '✓ Tersimpan' : 'Simpan'}
+          </Button>
+          {onOpenCollection ? (
+            <Button variant="ghost" size="sm" onClick={onOpenCollection}>
+              Koleksi
+            </Button>
+          ) : null}
           {onOpenReport ? (
             <Button variant="ghost" size="sm" onClick={onOpenReport}>
               Laporan Lengkap

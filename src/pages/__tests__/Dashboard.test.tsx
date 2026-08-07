@@ -46,7 +46,9 @@ describe('Dashboard — todo 16 acceptance criteria', () => {
 
   it('renders a horizon tlDr with agreement label + 2 domain names + 2 scores', () => {
     const html = renderDashboard()
-    // tlDr template: "<Horizon> ini: persetujuan <Label> — <Top> teratas (skor <S>), <Bottom> paling perlu hati-hati (skor <s>)."
+    // tlDr template:
+    // "<Horizon> ini: persetujuan <Label> — <Top> teratas (skor <S>),
+    //  <Bottom> paling perlu hati-hati (skor <s>)."
     // Default tab is harian. Check the structural pieces.
     expect(html).toMatch(/persetujuan (Tinggi|Sedang|Rendah)/)
     expect(html).toMatch(/teratas \(skor \d+\)/)

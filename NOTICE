@@ -1,0 +1,147 @@
+AKASHA ASTROLOGY ENGINE
+NOTICE FILE
+
+Copyright (C) 2026 akasha contributors
+
+This project is licensed under the GNU General Public License v3.0.
+See the LICENSE file for the full text of the license.
+
+=======================================================================
+1. SWISS EPHEMERIS (Astrodienst) - DATA FILES
+=======================================================================
+
+This project uses ephemeris data files and computation code derived
+from the Swiss Ephemeris, created and maintained by Astrodienst
+(https://www.astro.com).
+
+Astrodienst Swiss Ephemeris License Summary
+-------------------------------------------
+
+The Swiss Ephemeris consists of two parts:
+
+1. The ephemeris software (sweph), which is licensed under the GNU
+   General Public License (GPL) version 2 or later, with a special
+   exception that allows linking with proprietary software under
+   certain conditions. See:
+   https://www.astro.com/swisseph/
+
+2. The ephemeris DATA FILES (the .se1 files containing planetary
+   positions), which are NOT covered by the GPL. These data files are
+   made available by Astrodienst under the following terms:
+
+   >>> The ephemeris data files distributed by Astrodienst are FREE
+   >>> for non-commercial use only.
+
+   For COMMERCIAL use of the ephemeris data files, you MUST obtain a
+   license from Astrodienst. See:
+   https://www.astro.com/swisseph/swepha_e.htm
+
+IMPORTANT RESTRICTION
+---------------------
+
+Any redistribution or use of the Swiss Ephemeris data files (.se1)
+included in or accessed by this project is strictly limited to
+NON-COMMERCIAL purposes. If you wish to use this project or its
+bundled ephemeris data for commercial purposes, you must:
+
+  (a) Obtain a commercial license for the Swiss Ephemeris data files
+      directly from Astrodienst, OR
+  (b) Remove the .se1 data files and provide your own properly
+      licensed ephemeris data source.
+
+For the official licensing terms, visit:
+https://www.astro.com/swisseph/
+
+=======================================================================
+2. SWISS EPHEMERIS WRAPPER (swisseph-wasm)
+=======================================================================
+
+This project uses the swisseph-wasm package, a WebAssembly port of
+the Swiss Ephemeris library.
+
+  Project:   swisseph-wasm
+  Author:    prolaxu
+  License:   GPL-3.0-or-later
+  Homepage:  https://github.com/prolaxu/swisseph-wasm
+
+=======================================================================
+3. LUNAR-JAVASCRIPT (lunar-javascript)
+=======================================================================
+
+This project uses lunar-javascript for Chinese lunar calendar
+calculations used in the Bazi (Four Pillars) engine.
+
+  Project:   lunar-javascript
+  Author:    6tail <6tail@6tail.cn>
+  License:   MIT
+  Homepage:  https://github.com/6tail/lunar-javascript
+
+MIT License
+-----------
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+=======================================================================
+4. UI/UX DESIGN SYSTEM (ui-ux-pro-max-skill)
+=======================================================================
+
+The design system tokens, color palette structure, and component
+styling conventions in this project's theme were inspired by and
+adapted from the ui-ux-pro-max-skill design system methodology.
+
+  Project:   ui-ux-pro-max-skill
+  License:   MIT
+
+MIT License
+-----------
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+=======================================================================
+SUMMARY
+=======================================================================
+
+- akasha source code: GPL-3.0 (see LICENSE)
+- Swiss Ephemeris software (sweph): GPL-2.0+ with linking exception
+- Swiss Ephemeris data files (.se1): NON-COMMERCIAL USE ONLY
+- swisseph-wasm: GPL-3.0-or-later
+- lunar-javascript: MIT
+- ui-ux-pro-max-skill design system: MIT
+
+If you redistribute this project, you MUST include this NOTICE file
+and ensure all downstream users are aware of the non-commercial
+restriction on the Swiss Ephemeris data files.

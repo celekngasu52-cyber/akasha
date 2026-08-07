@@ -1,0 +1,71 @@
+{
+  "header": {
+    "source": "prokerala.com",
+    "url": "https://www.prokerala.com/astrology/birth-chart/",
+    "dashaUrl": "https://www.prokerala.com/astrology/vimshottari-dasha.php",
+    "capturedAt": "2026-08-07T06:30:00Z",
+    "config": {
+      "ayanamsa": "Lahiri",
+      "zodiac": "sidereal",
+      "chartStyle": "north-indian rasi",
+      "houseSystem": "whole-sign (lagna = ascendant sign)"
+    },
+    "birthData": {
+      "birthDateTime": "1990-05-10T12:00",
+      "gender": "male",
+      "lat": -6.2088,
+      "lng": 106.8456,
+      "tzIANA": "Asia/Jakarta",
+      "placeName": "Jakarta, Jakarta, Indonesia",
+      "prokeralaLocId": "1642911"
+    },
+    "note": "Case1 persona matching bazi/ziwei case1. Ayanamsa = Lahiri (prokerala default for Vedic). Planet positions are absolute sidereal longitudes 0-360 deg; 'degInRasi' is the longitude within the rasi (0-30)."
+  },
+  "ayanamsa": {
+    "name": "Lahiri",
+    "degreesAtBirth": null,
+    "note": "prokerala reports ayanamsa=Lahiri by name; the numeric value is computed by our swisseph wrapper at runtime."
+  },
+  "ascendant": {
+    "siderealLongitudeDeg": 111.5667,
+    "degInRasi": 21.5667,
+    "rasiIndex": 3,
+    "rasiName": "Karka",
+    "rasiLord": "Moon",
+    "nakshatra": "Ashlesha",
+    "nakshatraLord": "Mercury"
+  },
+  "moon": {
+    "siderealLongitudeDeg": 209.8667,
+    "degInRasi": 29.8667,
+    "rasiIndex": 6,
+    "rasiName": "Tula",
+    "rasiLord": "Venus",
+    "nakshatra": "Vishaka",
+    "nakshatraIndex": 15,
+    "nakshatraLord": "Jupiter",
+    "pada": 3
+  },
+  "planets": [
+    { "name": "Sun", "siderealLongitudeDeg": 25.55, "rasiIndex": 0, "rasiName": "Mesha", "nakshatra": "Bharani", "nakshatraLord": "Venus" },
+    { "name": "Moon", "siderealLongitudeDeg": 209.8667, "rasiIndex": 6, "rasiName": "Tula", "nakshatra": "Vishaka", "nakshatraLord": "Jupiter" },
+    { "name": "Mercury", "siderealLongitudeDeg": 15.9, "rasiIndex": 0, "rasiName": "Mesha", "nakshatra": "Bharani", "nakshatraLord": "Venus", "retrograde": true },
+    { "name": "Venus", "siderealLongitudeDeg": 343.0833, "rasiIndex": 11, "rasiName": "Meena", "nakshatra": "Uttara Bhadrapada", "nakshatraLord": "Saturn" },
+    { "name": "Mars", "siderealLongitudeDeg": 320.6667, "rasiIndex": 10, "rasiName": "Kumbha", "nakshatra": "Purva Bhadrapada", "nakshatraLord": "Jupiter" },
+    { "name": "Jupiter", "siderealLongitudeDeg": 74.8333, "rasiIndex": 2, "rasiName": "Mithuna", "nakshatra": "Ardra", "nakshatraLord": "Rahu" },
+    { "name": "Saturn", "siderealLongitudeDeg": 271.5833, "rasiIndex": 9, "rasiName": "Makara", "nakshatra": "Uttara Ashadha", "nakshatraLord": "Sun", "retrograde": true },
+    { "name": "Rahu", "siderealLongitudeDeg": 287.8833, "rasiIndex": 9, "rasiName": "Makara", "nakshatra": "Shravana", "nakshatraLord": "Moon", "retrograde": true },
+    { "name": "Ketu", "siderealLongitudeDeg": 107.8833, "rasiIndex": 3, "rasiName": "Karka", "retrograde": true }
+  ],
+  "vimshottariDasha": [
+    { "lord": "Jupiter", "startISO": "1978-07-02", "endISO": "1994-07-02", "durationYears": 16 },
+    { "lord": "Saturn", "startISO": "1994-07-02", "endISO": "2013-07-02", "durationYears": 19 },
+    { "lord": "Mercury", "startISO": "2013-07-02", "endISO": "2030-07-02", "durationYears": 17 },
+    { "lord": "Ketu", "startISO": "2030-07-02", "endISO": "2037-07-02", "durationYears": 7 },
+    { "lord": "Venus", "startISO": "2037-07-02", "endISO": "2057-07-02", "durationYears": 20 },
+    { "lord": "Sun", "startISO": "2057-07-02", "endISO": "2063-07-02", "durationYears": 6 },
+    { "lord": "Moon", "startISO": "2063-07-02", "endISO": "2073-07-02", "durationYears": 10 },
+    { "lord": "Mars", "startISO": "2073-07-02", "endISO": "2080-07-02", "durationYears": 7 },
+    { "lord": "Rahu", "startISO": "2080-07-02", "endISO": "2098-07-02", "durationYears": 18 }
+  ]
+}

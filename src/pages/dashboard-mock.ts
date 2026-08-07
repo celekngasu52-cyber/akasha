@@ -175,3 +175,115 @@ export function buildDashboardData(): readonly DashboardHorizonData[] {
     return { horizon, domains, horizonTlDr }
   })
 }
+
+/* ---- daily (harian) forecast list: today + 6 more days ---- */
+
+/** Number of days shown in the daily forecast list. */
+export const DAILY_HORIZON_DAYS = 7
+
+/** Indonesian weekday names, index 0 = Sunday. Deterministic, no locale API. */
+const DAYS_LONG = [
+  'Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu',
+] as const
+
+/** Indonesian weekday abbreviations, index 0 = Sunday. */
+const DAYS_SHORT = ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'] as const
+
+/** Indonesian month abbreviations, index 0 = January. */
+const MONTHS_SHORT = [
+  'Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des',
+] as const
+
+/** One day in the daily forecast list. */
+export interface DailyEntry {
+  /** Target date, ISO (YYYY-MM-DD). */
+  readonly dateISO: string
+  /** 'Hari ini' | 'Besok' | 'Lusa' | weekday long name. */
+  readonly relativeLabel: string
+  /** Compact Indonesian date, e.g. 'Sab, 8 Agu 2026'. */
+  readonly dateLabel: string
+  /** Mean-based agreement tier across the 4 domains. */
+  readonly agreementLabel: 'Tinggi' | 'Sedang' | 'Rendah'
+  /** Per-domain scores in DASHBOARD_DOMAINS order. */
+  readonly domains: readonly { domain: DashboardDomain; score: number }[]
+  /** One-line summary; the relative prefix lives in the row header. */
+  readonly tlDr: string
+}
+
+function pad2(n: number): string {
+  return String(n).padStart(2, '0')
+}
+
+function isoOfDate(d: Date): string {
+  return `${d.getUTCFullYear()}-${pad2(d.getUTCMonth() + 1)}-${pad2(d.getUTCDate())}`
+}
+
+/** dateISO + n days -> dateISO. Pure UTC math, no DST surprises. */
+function addDaysISO(iso: string, n: number): string {
+  const [y, m, d] = iso.split('-').map(Number)
+  return isoOfDate(new Date(Date.UTC(y!, m! - 1, d! + n)))
+}
+
+/** Weekday index (0 = Sunday) for a dateISO. */
+function weekdayIndex(iso: string): number {
+  const [y, m, d] = iso.split('-').map(Number)
+  return new Date(Date.UTC(y!, m! - 1, d!)).getUTCDay()
+}
+
+/** Compact Indonesian date label: 'Sab, 8 Agu 2026'. */
+function formatDateLabel(iso: string): string {
+  const [y, m, d] = iso.split('-').map(Number)
+  return `${DAYS_SHORT[weekdayIndex(iso)]}, ${d} ${MONTHS_SHORT[m! - 1]} ${y}`
+}
+
+/** Relative label: first three days are named, the rest use the weekday. */
+function relativeLabelFor(dayIndex: number, iso: string): string {
+  if (dayIndex === 0) return 'Hari ini'
+  if (dayIndex === 1) return 'Besok'
+  if (dayIndex === 2) return 'Lusa'
+  return DAYS_LONG[weekdayIndex(iso)]!
+}
+
+/** Mean-based agreement tier for a day, matching labelFor thresholds. */
+function dailyLabel(
+  domains: readonly { score: number }[],
+): 'Tinggi' | 'Sedang' | 'Rendah' {
+  const mean = domains.reduce((s, d) => s + d.score, 0) / domains.length
+  return labelFor(Math.round(mean))
+}
+
+/** Build one day entry, seeded by horizon+domain+dateISO so days differ. */
+function buildDailyEntry(dateISO: string, dayIndex: number): DailyEntry {
+  const domains = DASHBOARD_DOMAINS.map((domain) => {
+    const seed = hashSeed(`harian|${domain}|${dateISO}`)
+    return { domain, score: toScore100(mulberry32(seed)()) }
+  })
+  const agreementLabel = dailyLabel(domains)
+  const sorted = [...domains].sort((a, b) => b.score - a.score)
+  const top = sorted[0]!
+  const bottom = sorted[sorted.length - 1]!
+  return {
+    dateISO,
+    relativeLabel: relativeLabelFor(dayIndex, dateISO),
+    dateLabel: formatDateLabel(dateISO),
+    agreementLabel,
+    domains,
+    tlDr:
+      `persetujuan ${agreementLabel} — ${top.domain} teratas (skor ${top.score}), ` +
+      `${bottom.domain} paling perlu hati-hati (skor ${bottom.score}).`,
+  }
+}
+
+/**
+ * Build the daily forecast list: today + DAILY_HORIZON_DAYS-1 more days.
+ * `startISO` defaults to the local today. Each day is seeded by its own date,
+ * so per-date values are stable while the list rolls forward with the calendar.
+ */
+export function buildDailyForecast(startISO?: string): readonly DailyEntry[] {
+  const start = startISO ?? isoOfDate(new Date())
+  const out: DailyEntry[] = []
+  for (let i = 0; i < DAILY_HORIZON_DAYS; i++) {
+    out.push(buildDailyEntry(addDaysISO(start, i), i))
+  }
+  return out
+}

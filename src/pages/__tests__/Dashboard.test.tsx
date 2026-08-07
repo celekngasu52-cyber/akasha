@@ -16,7 +16,11 @@ import { describe, it, expect } from 'vitest'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { createElement } from 'react'
 import { Dashboard } from '../Dashboard'
-import { buildDashboardData, DASHBOARD_DOMAINS } from '../dashboard-mock'
+import {
+  buildDashboardData,
+  buildDailyForecast,
+  DASHBOARD_DOMAINS,
+} from '../dashboard-mock'
 import type { BirthData } from '../../core/birth/types'
 
 const STUB_BIRTH: BirthData = {
@@ -108,5 +112,66 @@ describe('Dashboard — todo 16 acceptance criteria', () => {
         }
       }
     }
+  })
+})
+
+describe('Dashboard — daily (harian) forecast list', () => {
+  // 2026-08-08 is a Saturday.
+  const START = '2026-08-08'
+
+  it('builds 7 consecutive days starting at startISO', () => {
+    const days = buildDailyForecast(START)
+    expect(days.length).toBe(7)
+    expect(days[0]!.dateISO).toBe(START)
+    expect(days[1]!.dateISO).toBe('2026-08-09')
+    expect(days[6]!.dateISO).toBe('2026-08-14')
+  })
+
+  it('labels the first three days Hari ini/Besok/Lusa, the rest by weekday', () => {
+    const days = buildDailyForecast(START)
+    expect(days[0]!.relativeLabel).toBe('Hari ini')
+    expect(days[1]!.relativeLabel).toBe('Besok')
+    expect(days[2]!.relativeLabel).toBe('Lusa')
+    expect(days[3]!.relativeLabel).toBe('Selasa') // 2026-08-11
+  })
+
+  it('formats compact Indonesian date labels', () => {
+    const days = buildDailyForecast(START)
+    expect(days[0]!.dateLabel).toBe('Sab, 8 Agu 2026')
+    expect(days[1]!.dateLabel).toBe('Min, 9 Agu 2026')
+  })
+
+  it('each day has 4 domain scores in [0,100] and a non-empty tlDr', () => {
+    const days = buildDailyForecast(START)
+    for (const day of days) {
+      expect(day.domains.length).toBe(4)
+      for (const d of day.domains) {
+        expect(d.score).toBeGreaterThanOrEqual(0)
+        expect(d.score).toBeLessThanOrEqual(100)
+      }
+      expect(day.tlDr.length).toBeGreaterThan(0)
+      expect(day.tlDr).toMatch(/persetujuan (Tinggi|Sedang|Rendah)/)
+    }
+  })
+
+  it('is deterministic per date — same start yields identical lists', () => {
+    const a = buildDailyForecast(START)
+    const b = buildDailyForecast(START)
+    for (let i = 0; i < a.length; i++) {
+      expect(a[i]!.dateISO).toBe(b[i]!.dateISO)
+      expect(a[i]!.tlDr).toBe(b[i]!.tlDr)
+      for (let j = 0; j < 4; j++) {
+        expect(a[i]!.domains[j]!.score).toBe(b[i]!.domains[j]!.score)
+      }
+    }
+  })
+
+  it('renders the 7-day list in the default harian tab', () => {
+    const html = renderDashboard()
+    expect(html).toContain('Hari ini')
+    expect(html).toContain('Besok')
+    expect(html).toContain('Lusa')
+    // One day-row tlDr per day; the horizon box is hidden for the harian tab.
+    expect(html.match(/teratas \(skor \d+\)/g)!.length).toBe(7)
   })
 })

@@ -1,0 +1,132 @@
+{
+  "header": {
+    "source": "throosden.github.io/bazi",
+    "url": "https://throosden.github.io/bazi/",
+    "birthDateTime": "2000-02-05T10:00",
+    "gender": "female",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "tzIANA": "Asia/Shanghai",
+    "placeName": "Beijing",
+    "note": "Imlek (Chinese New Year) boundary — lunar month 1 day 1",
+    "screenshotFile": "case3.png",
+    "capturedAt": "2026-08-07T06:00:00Z"
+  },
+  "solarDate": "2000-02-05",
+  "lunarDate": "二〇〇〇年正月初一",
+  "fourPillars": {
+    "year": {
+      "ganZhi": "庚辰",
+      "stem": "庚",
+      "branch": "辰"
+    },
+    "month": {
+      "ganZhi": "戊寅",
+      "stem": "戊",
+      "branch": "寅"
+    },
+    "day": {
+      "ganZhi": "癸巳",
+      "stem": "癸",
+      "branch": "巳"
+    },
+    "hour": {
+      "ganZhi": "丁巳",
+      "stem": "丁",
+      "branch": "巳"
+    }
+  },
+  "dayMaster": "癸",
+  "luckPillars": [
+    {
+      "ganZhi": "",
+      "startAge": 1,
+      "endAge": 0,
+      "startYear": 2000,
+      "endYear": 1999
+    },
+    {
+      "ganZhi": "丁丑",
+      "startAge": 1,
+      "endAge": 10,
+      "startYear": 2000,
+      "endYear": 2009
+    },
+    {
+      "ganZhi": "丙子",
+      "startAge": 11,
+      "endAge": 20,
+      "startYear": 2010,
+      "endYear": 2019
+    },
+    {
+      "ganZhi": "乙亥",
+      "startAge": 21,
+      "endAge": 30,
+      "startYear": 2020,
+      "endYear": 2029
+    },
+    {
+      "ganZhi": "甲戌",
+      "startAge": 31,
+      "endAge": 40,
+      "startYear": 2030,
+      "endYear": 2039
+    },
+    {
+      "ganZhi": "癸酉",
+      "startAge": 41,
+      "endAge": 50,
+      "startYear": 2040,
+      "endYear": 2049
+    },
+    {
+      "ganZhi": "壬申",
+      "startAge": 51,
+      "endAge": 60,
+      "startYear": 2050,
+      "endYear": 2059
+    },
+    {
+      "ganZhi": "辛未",
+      "startAge": 61,
+      "endAge": 70,
+      "startYear": 2060,
+      "endYear": 2069
+    }
+  ],
+  "tenGods": {
+    "year": {
+      "stem": "正印",
+      "branch": [
+        "正官",
+        "食神",
+        "比肩"
+      ]
+    },
+    "month": {
+      "stem": "正官",
+      "branch": [
+        "伤官",
+        "正财",
+        "正官"
+      ]
+    },
+    "day": {
+      "stem": "日主",
+      "branch": [
+        "正财",
+        "正印",
+        "正官"
+      ]
+    },
+    "hour": {
+      "stem": "偏财",
+      "branch": [
+        "正财",
+        "正印",
+        "正官"
+      ]
+    }
+  }
+}

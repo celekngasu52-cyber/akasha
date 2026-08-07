@@ -1,0 +1,128 @@
+{
+  "header": {
+    "source": "throosden.github.io/bazi",
+    "url": "https://throosden.github.io/bazi/",
+    "birthDateTime": "1985-03-22T23:00",
+    "gender": "male",
+    "lat": 1.3521,
+    "lng": 103.8198,
+    "tzIANA": "Asia/Singapore",
+    "placeName": "Singapore",
+    "note": "23:00 early 子时 boundary — hour pillar uses 子时, day pillar stays current day",
+    "screenshotFile": "case2.png",
+    "capturedAt": "2026-08-07T06:00:00Z"
+  },
+  "solarDate": "1985-03-22",
+  "lunarDate": "一九八五年二月初二",
+  "fourPillars": {
+    "year": {
+      "ganZhi": "乙丑",
+      "stem": "乙",
+      "branch": "丑"
+    },
+    "month": {
+      "ganZhi": "己卯",
+      "stem": "己",
+      "branch": "卯"
+    },
+    "day": {
+      "ganZhi": "庚申",
+      "stem": "庚",
+      "branch": "申"
+    },
+    "hour": {
+      "ganZhi": "戊子",
+      "stem": "戊",
+      "branch": "子"
+    }
+  },
+  "dayMaster": "庚",
+  "luckPillars": [
+    {
+      "ganZhi": "",
+      "startAge": 1,
+      "endAge": 5,
+      "startYear": 1985,
+      "endYear": 1989
+    },
+    {
+      "ganZhi": "戊寅",
+      "startAge": 6,
+      "endAge": 15,
+      "startYear": 1990,
+      "endYear": 1999
+    },
+    {
+      "ganZhi": "丁丑",
+      "startAge": 16,
+      "endAge": 25,
+      "startYear": 2000,
+      "endYear": 2009
+    },
+    {
+      "ganZhi": "丙子",
+      "startAge": 26,
+      "endAge": 35,
+      "startYear": 2010,
+      "endYear": 2019
+    },
+    {
+      "ganZhi": "乙亥",
+      "startAge": 36,
+      "endAge": 45,
+      "startYear": 2020,
+      "endYear": 2029
+    },
+    {
+      "ganZhi": "甲戌",
+      "startAge": 46,
+      "endAge": 55,
+      "startYear": 2030,
+      "endYear": 2039
+    },
+    {
+      "ganZhi": "癸酉",
+      "startAge": 56,
+      "endAge": 65,
+      "startYear": 2040,
+      "endYear": 2049
+    },
+    {
+      "ganZhi": "壬申",
+      "startAge": 66,
+      "endAge": 75,
+      "startYear": 2050,
+      "endYear": 2059
+    }
+  ],
+  "tenGods": {
+    "year": {
+      "stem": "正财",
+      "branch": [
+        "正印",
+        "伤官",
+        "劫财"
+      ]
+    },
+    "month": {
+      "stem": "正印",
+      "branch": [
+        "正财"
+      ]
+    },
+    "day": {
+      "stem": "日主",
+      "branch": [
+        "比肩",
+        "食神",
+        "偏印"
+      ]
+    },
+    "hour": {
+      "stem": "偏印",
+      "branch": [
+        "伤官"
+      ]
+    }
+  }
+}

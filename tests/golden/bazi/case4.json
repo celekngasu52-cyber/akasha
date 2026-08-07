@@ -1,0 +1,128 @@
+{
+  "header": {
+    "source": "throosden.github.io/bazi",
+    "url": "https://throosden.github.io/bazi/",
+    "birthDateTime": "1975-08-15T06:00",
+    "gender": "male",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "tzIANA": "Asia/Tokyo",
+    "placeName": "Tokyo",
+    "note": "diverse case",
+    "screenshotFile": "case4.png",
+    "capturedAt": "2026-08-07T06:00:00Z"
+  },
+  "solarDate": "1975-08-15",
+  "lunarDate": "一九七五年七月初九",
+  "fourPillars": {
+    "year": {
+      "ganZhi": "乙卯",
+      "stem": "乙",
+      "branch": "卯"
+    },
+    "month": {
+      "ganZhi": "甲申",
+      "stem": "甲",
+      "branch": "申"
+    },
+    "day": {
+      "ganZhi": "癸巳",
+      "stem": "癸",
+      "branch": "巳"
+    },
+    "hour": {
+      "ganZhi": "乙卯",
+      "stem": "乙",
+      "branch": "卯"
+    }
+  },
+  "dayMaster": "癸",
+  "luckPillars": [
+    {
+      "ganZhi": "",
+      "startAge": 1,
+      "endAge": 2,
+      "startYear": 1975,
+      "endYear": 1976
+    },
+    {
+      "ganZhi": "癸未",
+      "startAge": 3,
+      "endAge": 12,
+      "startYear": 1977,
+      "endYear": 1986
+    },
+    {
+      "ganZhi": "壬午",
+      "startAge": 13,
+      "endAge": 22,
+      "startYear": 1987,
+      "endYear": 1996
+    },
+    {
+      "ganZhi": "辛巳",
+      "startAge": 23,
+      "endAge": 32,
+      "startYear": 1997,
+      "endYear": 2006
+    },
+    {
+      "ganZhi": "庚辰",
+      "startAge": 33,
+      "endAge": 42,
+      "startYear": 2007,
+      "endYear": 2016
+    },
+    {
+      "ganZhi": "己卯",
+      "startAge": 43,
+      "endAge": 52,
+      "startYear": 2017,
+      "endYear": 2026
+    },
+    {
+      "ganZhi": "戊寅",
+      "startAge": 53,
+      "endAge": 62,
+      "startYear": 2027,
+      "endYear": 2036
+    },
+    {
+      "ganZhi": "丁丑",
+      "startAge": 63,
+      "endAge": 72,
+      "startYear": 2037,
+      "endYear": 2046
+    }
+  ],
+  "tenGods": {
+    "year": {
+      "stem": "食神",
+      "branch": [
+        "食神"
+      ]
+    },
+    "month": {
+      "stem": "伤官",
+      "branch": [
+        "正印",
+        "劫财",
+        "正官"
+      ]
+    },
+    "day": {
+      "stem": "日主",
+      "branch": [
+        "正财",
+        "正印",
+        "正官"
+      ]
+    },
+    "hour": {
+      "stem": "食神",
+      "branch": [
+        "食神"
+      ]
+    }
+  }
+}

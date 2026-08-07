@@ -1,0 +1,62 @@
+{
+  "header": {
+    "source": "synthetic (documented in test)",
+    "config": "strength rule: skor dukungan − skor pengerasan; stem=2, branch=1; strong ≥ +2, weak ≤ −2, balanced otherwise. +1 if element sama dengan / menghasilkan day master; −1 jika day master menghasilkannya / elemen mengontrol day master / day master mengontrolnya.",
+    "note": "Four synthetic FourPillars charts, hand-scored. 2 must classify strong, 2 weak. No BirthData — passed directly to computeStrength.",
+    "capturedAt": "2026-08-07T08:08:00Z"
+  },
+  "cases": [
+    {
+      "id": "strong-1",
+      "description": "Wood day master (甲), all four pillars 甲寅 — every stem wood (+2) and branch wood (+1) supports. Score = 4 * (2+1) = +12 → strong.",
+      "pillars": {
+        "year": { "ganZhi": "甲寅", "stem": "甲", "branch": "寅" },
+        "month": { "ganZhi": "甲寅", "stem": "甲", "branch": "寅" },
+        "day": { "ganZhi": "甲寅", "stem": "甲", "branch": "寅" },
+        "hour": { "ganZhi": "甲寅", "stem": "甲", "branch": "寅" }
+      },
+      "dayMaster": "甲",
+      "expectedScore": 12,
+      "expectedVerdict": "strong"
+    },
+    {
+      "id": "strong-2",
+      "description": "Fire day master (丙). Year 甲寅: wood generates fire (+3). Month 丙午: fire same (+3). Day 丙午: fire same (+3). Hour 甲子: wood stem generates fire (+2) but water branch controls fire (−1) → +1. Total +10 → strong.",
+      "pillars": {
+        "year": { "ganZhi": "甲寅", "stem": "甲", "branch": "寅" },
+        "month": { "ganZhi": "丙午", "stem": "丙", "branch": "午" },
+        "day": { "ganZhi": "丙午", "stem": "丙", "branch": "午" },
+        "hour": { "ganZhi": "甲子", "stem": "甲", "branch": "子" }
+      },
+      "dayMaster": "丙",
+      "expectedScore": 10,
+      "expectedVerdict": "strong"
+    },
+    {
+      "id": "weak-1",
+      "description": "Metal day master (庚). Metal generates water (drain, −1). Year/Month/Hour 壬子: water stem −2 + water branch −1 = −3 each. Day 庚子: metal stem same +2, water branch drain −1 → +1. Total −3 −3 +1 −3 = −8 → weak.",
+      "pillars": {
+        "year": { "ganZhi": "壬子", "stem": "壬", "branch": "子" },
+        "month": { "ganZhi": "壬子", "stem": "壬", "branch": "子" },
+        "day": { "ganZhi": "庚子", "stem": "庚", "branch": "子" },
+        "hour": { "ganZhi": "壬子", "stem": "壬", "branch": "子" }
+      },
+      "dayMaster": "庚",
+      "expectedScore": -8,
+      "expectedVerdict": "weak"
+    },
+    {
+      "id": "weak-2",
+      "description": "Earth day master (戊). Wood controls earth (−1); earth controls water (−1 wealth); earth generates metal (−1 output). Year 甲寅: wood controls earth −3. Month 壬子: earth controls water (wealth) −3. Day 戊申: earth same +2, metal drain −1 → +1. Hour 甲寅: wood controls earth −3. Total −3 −3 +1 −3 = −8 → weak.",
+      "pillars": {
+        "year": { "ganZhi": "甲寅", "stem": "甲", "branch": "寅" },
+        "month": { "ganZhi": "壬子", "stem": "壬", "branch": "子" },
+        "day": { "ganZhi": "戊申", "stem": "戊", "branch": "申" },
+        "hour": { "ganZhi": "甲寅", "stem": "甲", "branch": "寅" }
+      },
+      "dayMaster": "戊",
+      "expectedScore": -8,
+      "expectedVerdict": "weak"
+    }
+  ]
+}

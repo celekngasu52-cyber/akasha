@@ -1,0 +1,81 @@
+name: Deploy to GitHub Pages
+
+# PRASYARAT (wajib sekali sebelum workflow ini bisa deploy):
+# 1. Buka Settings → Pages di repo GitHub.
+# 2. Pada "Build and deployment" → "Source", pilih **GitHub Actions**.
+#    (Bukan "Deploy from a branch".)
+# 3. Tidak perlu token/secret tambahan — pakai OIDC id-token bawaan.
+# 4. Repo harus sudah berisi branch `main` (sumber deploy).
+#
+# Workflow ini build Vite app lalu publish dist/ ke GitHub Pages
+# pada setiap push ke main dan saat dijalankan manual.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Izin minimal yang dibutuhkan Pages Actions (OIDC + tulis Pages).
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Hanya satu deploy berjalan pada satu waktu; antrian yang baru membatalkan
+# proses yang lama yang masih berjalan (concurrency group per-branch).
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout kode (full history tidak diperlukan untuk build).
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Siapkan Node 20 LTS + cache npm (mempercepat CI).
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      # 3. Pasang dependensi dari lockfile (reproducible).
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Jalankan seluruh test suite (vitest run, non-watch).
+      - name: Run tests
+        run: npm test
+
+      # 5. Konfigurasi Pages (menyediakan config untuk upload artifact).
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # 6. Build produksi. GITHUB_ACTIONS=true membuat Vite memakai
+      #    base '/akasha/' (sesuai nama repo) agar asset path benar
+      #    di URL https://<user>.github.io/akasha/.
+      - name: Build
+        run: npm run build
+        env:
+          GITHUB_ACTIONS: 'true'
+
+      # 7. Upload dist/ sebagai artifact Pages.
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # 1. Deploy artifact yang di-upload pada job build ke GitHub Pages.
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,47 @@
+{
+  "header": {
+    "source": "insightapp.life/ziwei/chart",
+    "url": "https://insightapp.life/ziwei/chart",
+    "birthDateTime": "2000-03-15T23:30",
+    "gender": "male",
+    "lat": -6.2088,
+    "lng": 106.8456,
+    "tzIANA": "Asia/Jakarta",
+    "placeName": "Jakarta",
+    "note": "23:00 boundary case — Late Zi (23:00-24:00). Chart uses lunar 二月初十 (same lunar day as solar 3/15; the day does NOT advance past midnight in this tool's late-zi convention). Time branch = 子 (index 0). Tests the 早子时/晚子时 boundary rule.",
+    "capturedAt": "2026-08-07T06:40:00Z"
+  },
+  "solarDate": "2000-03-15",
+  "lunarDate": "二〇〇〇年二月初十",
+  "lunarMonth": 2,
+  "lunarDay": 10,
+  "yearGanZhi": "庚辰",
+  "monthGanZhi": "己卯",
+  "dayGanZhi": "癸酉",
+  "timeGanZhi": "壬子",
+  "timeBranchIndex": 0,
+  "isLateZi": true,
+  "naYinBureau": { "element": "土", "number": 5, "name": "土五局" },
+  "mingGongBranchIndex": 3,
+  "shenGongBranchIndex": 3,
+  "palaces": [
+    { "branchIndex": 0, "branch": "子", "ganZhi": "戊子", "name": "子女", "ageRange": "95-104", "stars": [ { "name": "太阳", "type": "main", "siHua": "禄" } ] },
+    { "branchIndex": 1, "branch": "丑", "ganZhi": "己丑", "name": "夫妻", "ageRange": "105-114", "stars": [ { "name": "天府", "type": "main" }, { "name": "天魁", "type": "aux" } ] },
+    { "branchIndex": 2, "branch": "寅", "ganZhi": "戊寅", "name": "兄弟", "ageRange": "115-124", "stars": [ { "name": "天机", "type": "main" }, { "name": "太阴", "type": "main", "siHua": "科" }, { "name": "火星", "type": "aux" } ] },
+    { "branchIndex": 3, "branch": "卯", "ganZhi": "己卯", "name": "命宫", "ageRange": "5-14", "stars": [ { "name": "紫微", "type": "main" }, { "name": "贪狼", "type": "main" } ], "isMingGong": true, "isShenGong": true },
+    { "branchIndex": 4, "branch": "辰", "ganZhi": "庚辰", "name": "父母", "ageRange": "15-24", "stars": [ { "name": "巨门", "type": "main" }, { "name": "文曲", "type": "aux" } ] },
+    { "branchIndex": 5, "branch": "巳", "ganZhi": "辛巳", "name": "福德", "ageRange": "25-34", "stars": [ { "name": "天相", "type": "main" }, { "name": "左辅", "type": "aux" } ] },
+    { "branchIndex": 6, "branch": "午", "ganZhi": "壬午", "name": "田宅", "ageRange": "35-44", "stars": [ { "name": "天梁", "type": "main" } ] },
+    { "branchIndex": 7, "branch": "未", "ganZhi": "癸未", "name": "事业", "ageRange": "45-54", "stars": [ { "name": "廉贞", "type": "main" }, { "name": "七杀", "type": "main" }, { "name": "天钺", "type": "aux" }, { "name": "陀罗", "type": "aux" } ] },
+    { "branchIndex": 8, "branch": "申", "ganZhi": "甲申", "name": "交友", "ageRange": "55-64", "stars": [ { "name": "禄存", "type": "aux" } ] },
+    { "branchIndex": 9, "branch": "酉", "ganZhi": "乙酉", "name": "迁移", "ageRange": "65-74", "stars": [ { "name": "右弼", "type": "aux" }, { "name": "擎羊", "type": "aux" } ] },
+    { "branchIndex": 10, "branch": "戌", "ganZhi": "丙戌", "name": "疾厄", "ageRange": "75-84", "stars": [ { "name": "天同", "type": "main", "siHua": "忌" }, { "name": "文昌", "type": "aux" }, { "name": "铃星", "type": "aux" } ] },
+    { "branchIndex": 11, "branch": "亥", "ganZhi": "丁亥", "name": "财帛", "ageRange": "85-94", "stars": [ { "name": "武曲", "type": "main", "siHua": "权" }, { "name": "破军", "type": "main" }, { "name": "地空", "type": "aux" }, { "name": "地劫", "type": "aux" } ] }
+  ],
+  "siHua": {
+    "禄": "太阳",
+    "权": "武曲",
+    "科": "太阴",
+    "忌": "天同"
+  }
+}

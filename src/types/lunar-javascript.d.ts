@@ -32,6 +32,9 @@ declare module 'lunar-javascript' {
     static fromDate(date: Date): Lunar
     static fromYmd(y: number, m: number, d: number): Lunar
     getEightChar(): EightChar
+    getMonth(): number
+    getDay(): number
+    toString(): string
     getYearInGanZhiExact(): string
     getYearGan(): string
     getYearZhi(): string

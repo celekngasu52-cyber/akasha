@@ -1,0 +1,46 @@
+{
+  "header": {
+    "source": "insightapp.life/ziwei/chart",
+    "url": "https://insightapp.life/ziwei/chart",
+    "birthDateTime": "1985-11-22T18:00",
+    "gender": "female",
+    "lat": -6.2088,
+    "lng": 106.8456,
+    "tzIANA": "Asia/Jakarta",
+    "placeName": "Jakarta",
+    "note": "female chart, You hour (17:00-19:00), 18:00 mid-hour",
+    "capturedAt": "2026-08-07T06:35:00Z"
+  },
+  "solarDate": "1985-11-22",
+  "lunarDate": "一九八五年十月十一",
+  "lunarMonth": 10,
+  "lunarDay": 11,
+  "yearGanZhi": "乙丑",
+  "monthGanZhi": "丁亥",
+  "dayGanZhi": "辛巳",
+  "timeGanZhi": "丁酉",
+  "timeBranchIndex": 9,
+  "naYinBureau": { "element": "土", "number": 5, "name": "土五局" },
+  "mingGongBranchIndex": 2,
+  "shenGongBranchIndex": 8,
+  "palaces": [
+    { "branchIndex": 0, "branch": "子", "ganZhi": "戊子", "name": "夫妻", "ageRange": "105-114", "stars": [ { "name": "廉贞", "type": "main" }, { "name": "天相", "type": "main" }, { "name": "天魁", "type": "aux" }, { "name": "火星", "type": "aux" } ] },
+    { "branchIndex": 1, "branch": "丑", "ganZhi": "己丑", "name": "兄弟", "ageRange": "115-124", "stars": [ { "name": "天梁", "type": "main", "siHua": "权" }, { "name": "文昌", "type": "aux" }, { "name": "文曲", "type": "aux" }, { "name": "左辅", "type": "aux" }, { "name": "右弼", "type": "aux" } ] },
+    { "branchIndex": 2, "branch": "寅", "ganZhi": "戊寅", "name": "命宫", "ageRange": "5-14", "stars": [ { "name": "七杀", "type": "main" }, { "name": "陀罗", "type": "aux" }, { "name": "地空", "type": "aux" } ], "isMingGong": true, "isShenGong": false },
+    { "branchIndex": 3, "branch": "卯", "ganZhi": "己卯", "name": "父母", "ageRange": "15-24", "stars": [ { "name": "天同", "type": "main" }, { "name": "禄存", "type": "aux" } ] },
+    { "branchIndex": 4, "branch": "辰", "ganZhi": "庚辰", "name": "福德", "ageRange": "25-34", "stars": [ { "name": "武曲", "type": "main" }, { "name": "擎羊", "type": "aux" } ] },
+    { "branchIndex": 5, "branch": "巳", "ganZhi": "辛巳", "name": "田宅", "ageRange": "35-44", "stars": [ { "name": "太阳", "type": "main" } ] },
+    { "branchIndex": 6, "branch": "午", "ganZhi": "壬午", "name": "事业", "ageRange": "45-54", "stars": [ { "name": "破军", "type": "main" } ] },
+    { "branchIndex": 7, "branch": "未", "ganZhi": "癸未", "name": "交友", "ageRange": "55-64", "stars": [ { "name": "天机", "type": "main", "siHua": "禄" }, { "name": "铃星", "type": "aux" } ] },
+    { "branchIndex": 8, "branch": "申", "ganZhi": "甲申", "name": "迁移", "ageRange": "65-74", "stars": [ { "name": "紫微", "type": "main", "siHua": "科" }, { "name": "天府", "type": "main" }, { "name": "天钺", "type": "aux" }, { "name": "地劫", "type": "aux" } ], "isShenGong": true },
+    { "branchIndex": 9, "branch": "酉", "ganZhi": "乙酉", "name": "疾厄", "ageRange": "75-84", "stars": [ { "name": "太阴", "type": "main", "siHua": "忌" } ] },
+    { "branchIndex": 10, "branch": "戌", "ganZhi": "丙戌", "name": "财帛", "ageRange": "85-94", "stars": [ { "name": "贪狼", "type": "main" } ] },
+    { "branchIndex": 11, "branch": "亥", "ganZhi": "丁亥", "name": "子女", "ageRange": "95-104", "stars": [ { "name": "巨门", "type": "main" } ] }
+  ],
+  "siHua": {
+    "禄": "天机",
+    "权": "天梁",
+    "科": "紫微",
+    "忌": "太阴"
+  }
+}

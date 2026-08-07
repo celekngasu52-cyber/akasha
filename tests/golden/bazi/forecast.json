@@ -1,0 +1,612 @@
+{
+  "header": {
+    "source": "lunar-javascript (deterministic engine source)",
+    "method": "Solar.fromYmdHms(y,m,d,12,0,0).getLunar().getEightChar() for target pillars; birth day master from case1.json (1990-05-10T12:00 Asia/Jakarta, male). Interactions: branch clash (六冲), branch combine (六合), element control (五行相克), stem combine (天干五合). Element scores: stems weight 2, branches weight 1.",
+    "birthDateTime": "1990-05-10T12:00",
+    "gender": "male",
+    "tzIANA": "Asia/Jakarta",
+    "note": "Golden forecast for case1 birth. Captured directly from lunar-javascript 1.7.7 — the same deterministic library the engine wraps, so engine output must match exactly.",
+    "capturedAt": "2026-08-07T08:30:00Z",
+    "birthDayMaster": {
+      "stem": "乙",
+      "branch": "亥"
+    },
+    "birthLuckPillars": [
+      {
+        "ganZhi": "",
+        "startAge": 1,
+        "endAge": 9,
+        "startYear": 1990,
+        "endYear": 1998
+      },
+      {
+        "ganZhi": "壬午",
+        "startAge": 10,
+        "endAge": 19,
+        "startYear": 1999,
+        "endYear": 2008
+      },
+      {
+        "ganZhi": "癸未",
+        "startAge": 20,
+        "endAge": 29,
+        "startYear": 2009,
+        "endYear": 2018
+      },
+      {
+        "ganZhi": "甲申",
+        "startAge": 30,
+        "endAge": 39,
+        "startYear": 2019,
+        "endYear": 2028
+      },
+      {
+        "ganZhi": "乙酉",
+        "startAge": 40,
+        "endAge": 49,
+        "startYear": 2029,
+        "endYear": 2038
+      },
+      {
+        "ganZhi": "丙戌",
+        "startAge": 50,
+        "endAge": 59,
+        "startYear": 2039,
+        "endYear": 2048
+      },
+      {
+        "ganZhi": "丁亥",
+        "startAge": 60,
+        "endAge": 69,
+        "startYear": 2049,
+        "endYear": 2058
+      },
+      {
+        "ganZhi": "戊子",
+        "startAge": 70,
+        "endAge": 79,
+        "startYear": 2059,
+        "endYear": 2068
+      }
+    ]
+  },
+  "cases": [
+    {
+      "id": "daily-2026-08-07",
+      "kind": "daily",
+      "targetISO": "2026-08-07",
+      "pillars": [
+        {
+          "slot": "year",
+          "ganZhi": "丙午",
+          "stem": "丙",
+          "branch": "午"
+        },
+        {
+          "slot": "month",
+          "ganZhi": "乙未",
+          "stem": "乙",
+          "branch": "未"
+        },
+        {
+          "slot": "day",
+          "ganZhi": "癸丑",
+          "stem": "癸",
+          "branch": "丑"
+        }
+      ],
+      "elementScores": {
+        "wood": 2,
+        "fire": 3,
+        "earth": 2,
+        "metal": 0,
+        "water": 2
+      },
+      "interactions": {
+        "clashes": [],
+        "combines": [],
+        "controls": [
+          "乙未",
+          "癸丑"
+        ],
+        "stemCombines": []
+      }
+    },
+    {
+      "id": "daily-2026-08-08",
+      "kind": "daily",
+      "targetISO": "2026-08-08",
+      "pillars": [
+        {
+          "slot": "year",
+          "ganZhi": "丙午",
+          "stem": "丙",
+          "branch": "午"
+        },
+        {
+          "slot": "month",
+          "ganZhi": "丙申",
+          "stem": "丙",
+          "branch": "申"
+        },
+        {
+          "slot": "day",
+          "ganZhi": "甲寅",
+          "stem": "甲",
+          "branch": "寅"
+        }
+      ],
+      "elementScores": {
+        "wood": 3,
+        "fire": 5,
+        "earth": 0,
+        "metal": 1,
+        "water": 0
+      },
+      "interactions": {
+        "clashes": [],
+        "combines": [
+          "甲寅"
+        ],
+        "controls": [
+          "丙申"
+        ],
+        "stemCombines": []
+      }
+    },
+    {
+      "id": "daily-2026-08-09",
+      "kind": "daily",
+      "targetISO": "2026-08-09",
+      "pillars": [
+        {
+          "slot": "year",
+          "ganZhi": "丙午",
+          "stem": "丙",
+          "branch": "午"
+        },
+        {
+          "slot": "month",
+          "ganZhi": "丙申",
+          "stem": "丙",
+          "branch": "申"
+        },
+        {
+          "slot": "day",
+          "ganZhi": "乙卯",
+          "stem": "乙",
+          "branch": "卯"
+        }
+      ],
+      "elementScores": {
+        "wood": 3,
+        "fire": 5,
+        "earth": 0,
+        "metal": 1,
+        "water": 0
+      },
+      "interactions": {
+        "clashes": [],
+        "combines": [],
+        "controls": [
+          "丙申"
+        ],
+        "stemCombines": []
+      }
+    },
+    {
+      "id": "weekly-2026-08-07",
+      "kind": "weekly",
+      "targetISO": "2026-08-07",
+      "pillars": [
+        {
+          "slot": "year",
+          "ganZhi": "丙午",
+          "stem": "丙",
+          "branch": "午"
+        },
+        {
+          "slot": "month",
+          "ganZhi": "乙未",
+          "stem": "乙",
+          "branch": "未"
+        },
+        {
+          "slot": "day",
+          "ganZhi": "癸丑",
+          "stem": "癸",
+          "branch": "丑"
+        }
+      ],
+      "elementScores": {
+        "wood": 2,
+        "fire": 3,
+        "earth": 2,
+        "metal": 0,
+        "water": 2
+      },
+      "interactions": {
+        "clashes": [],
+        "combines": [],
+        "controls": [
+          "乙未",
+          "癸丑"
+        ],
+        "stemCombines": []
+      },
+      "days": [
+        {
+          "kind": "daily",
+          "targetISO": "2026-08-07",
+          "pillars": [
+            {
+              "slot": "year",
+              "ganZhi": "丙午",
+              "stem": "丙",
+              "branch": "午"
+            },
+            {
+              "slot": "month",
+              "ganZhi": "乙未",
+              "stem": "乙",
+              "branch": "未"
+            },
+            {
+              "slot": "day",
+              "ganZhi": "癸丑",
+              "stem": "癸",
+              "branch": "丑"
+            }
+          ],
+          "elementScores": {
+            "wood": 2,
+            "fire": 3,
+            "earth": 2,
+            "metal": 0,
+            "water": 2
+          },
+          "interactions": {
+            "clashes": [],
+            "combines": [],
+            "controls": [
+              "乙未",
+              "癸丑"
+            ],
+            "stemCombines": []
+          }
+        },
+        {
+          "kind": "daily",
+          "targetISO": "2026-08-08",
+          "pillars": [
+            {
+              "slot": "year",
+              "ganZhi": "丙午",
+              "stem": "丙",
+              "branch": "午"
+            },
+            {
+              "slot": "month",
+              "ganZhi": "丙申",
+              "stem": "丙",
+              "branch": "申"
+            },
+            {
+              "slot": "day",
+              "ganZhi": "甲寅",
+              "stem": "甲",
+              "branch": "寅"
+            }
+          ],
+          "elementScores": {
+            "wood": 3,
+            "fire": 5,
+            "earth": 0,
+            "metal": 1,
+            "water": 0
+          },
+          "interactions": {
+            "clashes": [],
+            "combines": [
+              "甲寅"
+            ],
+            "controls": [
+              "丙申"
+            ],
+            "stemCombines": []
+          }
+        },
+        {
+          "kind": "daily",
+          "targetISO": "2026-08-09",
+          "pillars": [
+            {
+              "slot": "year",
+              "ganZhi": "丙午",
+              "stem": "丙",
+              "branch": "午"
+            },
+            {
+              "slot": "month",
+              "ganZhi": "丙申",
+              "stem": "丙",
+              "branch": "申"
+            },
+            {
+              "slot": "day",
+              "ganZhi": "乙卯",
+              "stem": "乙",
+              "branch": "卯"
+            }
+          ],
+          "elementScores": {
+            "wood": 3,
+            "fire": 5,
+            "earth": 0,
+            "metal": 1,
+            "water": 0
+          },
+          "interactions": {
+            "clashes": [],
+            "combines": [],
+            "controls": [
+              "丙申"
+            ],
+            "stemCombines": []
+          }
+        },
+        {
+          "kind": "daily",
+          "targetISO": "2026-08-10",
+          "pillars": [
+            {
+              "slot": "year",
+              "ganZhi": "丙午",
+              "stem": "丙",
+              "branch": "午"
+            },
+            {
+              "slot": "month",
+              "ganZhi": "丙申",
+              "stem": "丙",
+              "branch": "申"
+            },
+            {
+              "slot": "day",
+              "ganZhi": "丙辰",
+              "stem": "丙",
+              "branch": "辰"
+            }
+          ],
+          "elementScores": {
+            "wood": 0,
+            "fire": 7,
+            "earth": 1,
+            "metal": 1,
+            "water": 0
+          },
+          "interactions": {
+            "clashes": [],
+            "combines": [],
+            "controls": [
+              "丙申",
+              "丙辰"
+            ],
+            "stemCombines": []
+          }
+        },
+        {
+          "kind": "daily",
+          "targetISO": "2026-08-11",
+          "pillars": [
+            {
+              "slot": "year",
+              "ganZhi": "丙午",
+              "stem": "丙",
+              "branch": "午"
+            },
+            {
+              "slot": "month",
+              "ganZhi": "丙申",
+              "stem": "丙",
+              "branch": "申"
+            },
+            {
+              "slot": "day",
+              "ganZhi": "丁巳",
+              "stem": "丁",
+              "branch": "巳"
+            }
+          ],
+          "elementScores": {
+            "wood": 0,
+            "fire": 8,
+            "earth": 0,
+            "metal": 1,
+            "water": 0
+          },
+          "interactions": {
+            "clashes": [
+              "丁巳"
+            ],
+            "combines": [],
+            "controls": [
+              "丙申"
+            ],
+            "stemCombines": []
+          }
+        },
+        {
+          "kind": "daily",
+          "targetISO": "2026-08-12",
+          "pillars": [
+            {
+              "slot": "year",
+              "ganZhi": "丙午",
+              "stem": "丙",
+              "branch": "午"
+            },
+            {
+              "slot": "month",
+              "ganZhi": "丙申",
+              "stem": "丙",
+              "branch": "申"
+            },
+            {
+              "slot": "day",
+              "ganZhi": "戊午",
+              "stem": "戊",
+              "branch": "午"
+            }
+          ],
+          "elementScores": {
+            "wood": 0,
+            "fire": 6,
+            "earth": 2,
+            "metal": 1,
+            "water": 0
+          },
+          "interactions": {
+            "clashes": [],
+            "combines": [],
+            "controls": [
+              "丙申"
+            ],
+            "stemCombines": []
+          }
+        },
+        {
+          "kind": "daily",
+          "targetISO": "2026-08-13",
+          "pillars": [
+            {
+              "slot": "year",
+              "ganZhi": "丙午",
+              "stem": "丙",
+              "branch": "午"
+            },
+            {
+              "slot": "month",
+              "ganZhi": "丙申",
+              "stem": "丙",
+              "branch": "申"
+            },
+            {
+              "slot": "day",
+              "ganZhi": "己未",
+              "stem": "己",
+              "branch": "未"
+            }
+          ],
+          "elementScores": {
+            "wood": 0,
+            "fire": 5,
+            "earth": 3,
+            "metal": 1,
+            "water": 0
+          },
+          "interactions": {
+            "clashes": [],
+            "combines": [],
+            "controls": [
+              "丙申",
+              "己未"
+            ],
+            "stemCombines": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "monthly-2026-08",
+      "kind": "monthly",
+      "targetISO": "2026-08-15",
+      "pillars": [
+        {
+          "slot": "year",
+          "ganZhi": "丙午",
+          "stem": "丙",
+          "branch": "午"
+        },
+        {
+          "slot": "month",
+          "ganZhi": "丙申",
+          "stem": "丙",
+          "branch": "申"
+        },
+        {
+          "slot": "day",
+          "ganZhi": "辛酉",
+          "stem": "辛",
+          "branch": "酉"
+        }
+      ],
+      "elementScores": {
+        "wood": 0,
+        "fire": 5,
+        "earth": 0,
+        "metal": 4,
+        "water": 0
+      },
+      "interactions": {
+        "clashes": [],
+        "combines": [],
+        "controls": [
+          "丙申",
+          "辛酉"
+        ],
+        "stemCombines": []
+      },
+      "activeLuck": {
+        "ganZhi": "甲申",
+        "startYear": 2019,
+        "endYear": 2028
+      }
+    },
+    {
+      "id": "yearly-2026",
+      "kind": "yearly",
+      "targetISO": "2026-01-01",
+      "pillars": [
+        {
+          "slot": "year",
+          "ganZhi": "乙巳",
+          "stem": "乙",
+          "branch": "巳"
+        },
+        {
+          "slot": "month",
+          "ganZhi": "戊子",
+          "stem": "戊",
+          "branch": "子"
+        },
+        {
+          "slot": "day",
+          "ganZhi": "乙亥",
+          "stem": "乙",
+          "branch": "亥"
+        }
+      ],
+      "elementScores": {
+        "wood": 4,
+        "fire": 1,
+        "earth": 2,
+        "metal": 0,
+        "water": 2
+      },
+      "interactions": {
+        "clashes": [
+          "乙巳"
+        ],
+        "combines": [],
+        "controls": [],
+        "stemCombines": []
+      },
+      "activeLuck": {
+        "ganZhi": "甲申",
+        "startYear": 2019,
+        "endYear": 2028
+      }
+    }
+  ]
+}

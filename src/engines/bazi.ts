@@ -18,8 +18,19 @@ export type {
   PillarTenGods,
   Gender,
   ResolvedTime,
+  ForecastPillar,
+  ElementScores,
+  ForecastInteractions,
+  ActiveLuck,
+  ForecastHorizon,
 } from './bazi/types'
 export { computeFourPillars, resolveWallClock } from './bazi/four-pillars'
 export { computeStrength } from './bazi/strength'
 export { computeLuckPillars } from './bazi/luck-pillars'
 export { computeTenGods } from './bazi/ten-gods'
+export {
+  computeDailyForecast,
+  computeWeeklyForecast,
+  computeMonthlyForecast,
+  computeYearlyForecast,
+} from './bazi/forecast'

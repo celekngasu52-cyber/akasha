@@ -19,7 +19,6 @@ import type { BirthData } from '../../core/birth'
 import { computeVedicChart } from '../vedic'
 import type {
   VedicChart,
-  SiderealPosition,
   DashaPeriod,
 } from '../vedic/types'
 

@@ -165,7 +165,7 @@ function buildHorizon(
  */
 export function computeDailyForecast(
   data: BirthData,
-  gender: Gender,
+  _gender: Gender,
   targetISO: string,
 ): ForecastHorizon {
   const [y, m, d] = parseISO(targetISO)
@@ -181,7 +181,7 @@ export function computeDailyForecast(
  */
 export function computeWeeklyForecast(
   data: BirthData,
-  gender: Gender,
+  _gender: Gender,
   startISO: string,
 ): ForecastHorizon {
   const dm = dayMaster(data)

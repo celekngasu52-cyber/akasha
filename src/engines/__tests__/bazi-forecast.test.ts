@@ -29,6 +29,8 @@ const birth: BirthData = {
   lat: -6.2088,
   lng: 106.8456,
   tzIANA: 'Asia/Jakarta',
+  placeName: 'Jakarta',
+  isTimeEstimated: false,
 }
 const gender = 1 as const // male
 

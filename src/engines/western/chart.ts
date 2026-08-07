@@ -321,15 +321,19 @@ function sind(d: number): number {
   return Math.sin((d * Math.PI) / 180)
 }
 
-type SweJdutFn = (jd: number, flag: number) => JulianTuple
-type JulianTuple = [
-  number, number, number, number, number, number, number,
-]
+type SweJdutFn = (jd: number, gregflag: number) => {
+  year: number
+  month: number
+  day: number
+  hour: number
+  minute: number
+  second: number
+}
 
 /** Convert a UT Julian Day to an ISO-8601 UTC string. */
-function jdToISO(swe: { jdut: SweJdutFn }, jd: number): string {
-  const d = swe.jdut(jd, 1)
-  const [Y, M, D, h, mi, s] = d
+function jdToISO(swe: { jdut1_to_utc: SweJdutFn }, jd: number): string {
+  const d = swe.jdut1_to_utc(jd, 1)
+  const { year: Y, month: M, day: D, hour: h, minute: mi, second: s } = d
   const ms = Math.round((s % 1) * 1000)
   const ss = Math.floor(s)
   const pad = (n: number, w = 2) => String(n).padStart(w, '0')

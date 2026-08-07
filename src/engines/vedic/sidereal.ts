@@ -114,14 +114,15 @@ export async function siderealPlanets(jdUT: number): Promise<
     longitudeDeg: norm360(p.longitude),
     retrograde: p.longitudeSpeed < 0,
   }))
-  // Mean Rahu (north node): swisseph MEAN_NODE via the singleton directly.
+  // Mean Rahu (north node): swisseph SE_MEAN_NODE via the singleton directly.
   const swe = await getSwissEph()
   const SEFLG_SWIEPH = swe.SEFLG_SWIEPH
   const SEFLG_SIDEREAL = swe.SEFLG_SIDEREAL
-  const MEAN_NODE = swe.MEAN_NODE ?? 11 // swisseph-wasm constant; 11 = mean node
-  const rahuRaw = swe.calc_ut(jdUT, MEAN_NODE, SEFLG_SWIEPH | SEFLG_SIDEREAL)
-  const rahuLon = norm360(rahuRaw.longitude ?? rahuRaw[0])
-  const rahuSpeed = rahuRaw.longitudeSpeed ?? rahuRaw[3]
+  const SE_MEAN_NODE = swe.SE_MEAN_NODE
+  const rahuRaw = swe.calc_ut(jdUT, SE_MEAN_NODE, SEFLG_SWIEPH | SEFLG_SIDEREAL)
+  // calc_ut returns Float64Array: [0]=lon, [3]=lonSpeed (see swisseph-wasm types)
+  const rahuLon = norm360(rahuRaw[0])
+  const rahuSpeed = rahuRaw[3]
   out.push({
     body: 'rahu' as VedicBody,
     longitudeDeg: rahuLon,

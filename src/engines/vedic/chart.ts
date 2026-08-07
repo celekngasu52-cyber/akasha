@@ -144,7 +144,7 @@ export async function computeVedicChart(
   const dasha = computeVimshottari(moon, birthMs)
   return {
     birthDateISO: data.dateISO,
-    birthTimeISO: data.timeISO,
+    birthTimeISO: data.timeISO ?? '',
     tzIANA: data.tzIANA,
     lat: data.lat,
     lng: data.lng,

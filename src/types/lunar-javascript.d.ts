@@ -38,6 +38,8 @@ declare module 'lunar-javascript' {
     getYearInGanZhiExact(): string
     getYearGan(): string
     getYearZhi(): string
+    getMonthGan(): string
+    getMonthZhi(): string
     getDayGan(): string
     getDayZhi(): string
     getSolar(): Solar

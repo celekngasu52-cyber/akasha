@@ -122,14 +122,6 @@ function ageAt(birth: BirthData, target: Date): number {
   return age
 }
 
-function pad2(n: number): string {
-  return n < 10 ? `0${n}` : String(n)
-}
-
-function isoOf(dt: Date): string {
-  return `${dt.getUTCFullYear()}-${pad2(dt.getUTCMonth() + 1)}-${pad2(dt.getUTCDate())}`
-}
-
 function toLunar(dateISO: string): LunarLike {
   const [y, m, d] = dateISO.split('-').map(Number)
   const solar = Solar.fromYmd(y, m, d)

@@ -157,7 +157,6 @@ function baziKarier(chart: Chart4): RuleResult {
   const officer = baziTokenScore(tenGods, '官')
   const resource = baziTokenScore(tenGods, '印')
   const strong = strength.verdict === 'strong'
-  const tokens = ['官', '印']
   let vote: Vote = 0
   let alasan = 'Day master '
   if (strong) {
@@ -181,7 +180,6 @@ function baziKarier(chart: Chart4): RuleResult {
 function baziCinta(chart: Chart4): RuleResult {
   const { tenGods } = chart.bazi
   const wealth = baziTokenScore(tenGods, '财')
-  const tokens = ['财']
   const vote: Vote = wealth >= 3 ? 1 : wealth === 0 ? -1 : 0
   const weight = Math.min(1, wealth / 6)
   const alasan =
@@ -194,14 +192,13 @@ function baziCinta(chart: Chart4): RuleResult {
 }
 
 function baziKesehatan(chart: Chart4): RuleResult {
-  const { pillars, strength } = chart.bazi
+  const { pillars } = chart.bazi
   const dayEl = STEM_ELEMENT[pillars.day.stem] ?? 'earth'
   let support = 0
   for (const p of [pillars.year, pillars.month, pillars.day, pillars.hour]) {
     if (supportsDayMaster(STEM_ELEMENT[p.stem] ?? '', dayEl)) support += 2
     if (supportsDayMaster(BRANCH_ELEMENT[p.branch] ?? '', dayEl)) support += 1
   }
-  const tokens = ['日主-support']
   const vote: Vote = support >= 5 ? 1 : support <= 1 ? -1 : 0
   const weight = Math.min(1, support / 8)
   const alasan =
@@ -218,7 +215,6 @@ function baziKeuangan(chart: Chart4): RuleResult {
   const wealth = baziTokenScore(tenGods, '财')
   const output = baziTokenScore(tenGods, '食')
   const weak = strength.verdict === 'weak'
-  const tokens = ['财', '食']
   // Weak day master cannot carry wealth — output (food) generates wealth
   // only when the day master is supported enough.
   let vote: Vote = 0
@@ -261,7 +257,6 @@ const ZIWEI_HEALTH_PALACES = ['疾厄', '命宫'] as const
 function ziweiKarier(chart: Chart4): RuleResult {
   const stars = ziweiStarsIn(chart.ziwei, ZIWEI_CAREER_PALACES)
   const hasLu = Object.values(chart.ziwei.siHua).some((s) => s.includes('禄'))
-  const tokens = ['官禄', '禄']
   const vote: Vote = stars >= 2 ? 1 : stars === 0 ? 0 : 0
   const weight = Math.min(1, stars / 3)
   const alasan =
@@ -274,7 +269,6 @@ function ziweiKarier(chart: Chart4): RuleResult {
 function ziweiCinta(chart: Chart4): RuleResult {
   const stars = ziweiStarsIn(chart.ziwei, ZIWEI_RELATION_PALACES)
   const hasLu = Object.values(chart.ziwei.siHua).some((s) => s.includes('禄'))
-  const tokens = ['夫妻', '福德']
   const vote: Vote = stars >= 2 ? 1 : stars === 0 ? -1 : 0
   const weight = Math.min(1, stars / 3)
   const alasan =
@@ -289,7 +283,6 @@ function ziweiCinta(chart: Chart4): RuleResult {
 function ziweiKesehatan(chart: Chart4): RuleResult {
   const stars = ziweiStarsIn(chart.ziwei, ZIWEI_HEALTH_PALACES)
   const hasJi = Object.values(chart.ziwei.siHua).some((s) => s.includes('忌'))
-  const tokens = ['疾厄', '命宫']
   const vote: Vote = hasJi ? -1 : stars >= 2 ? 1 : 0
   const weight = Math.min(1, stars / 3)
   const alasan = hasJi
@@ -303,7 +296,6 @@ function ziweiKesehatan(chart: Chart4): RuleResult {
 function ziweiKeuangan(chart: Chart4): RuleResult {
   const stars = ziweiStarsIn(chart.ziwei, ZIWEI_WEALTH_PALACES)
   const hasLu = Object.values(chart.ziwei.siHua).some((s) => s.includes('禄'))
-  const tokens = ['财帛']
   const vote: Vote = stars >= 2 && hasLu ? 1 : stars >= 2 ? 0 : 0
   const weight = Math.min(1, (stars + (hasLu ? 1 : 0)) / 4)
   const alasan =

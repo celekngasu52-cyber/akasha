@@ -17,6 +17,9 @@ export type {
   SiHua,
   ZiWeiChart,
   Gender,
+  ZiWeiForecastKind,
+  PalaceFocus,
+  ZiWeiForecastHorizon,
 } from './ziwei/types'
 export {
   computeMingShenGong,
@@ -32,3 +35,9 @@ export {
   PRIMARY_STARS,
 } from './ziwei/stars'
 export { computeZiWeiChart } from './ziwei/chart'
+export {
+  computeYearlyForecast,
+  computeMonthlyForecast,
+  computeDailyForecast,
+  computeDecadeForecast,
+} from './ziwei/forecast'

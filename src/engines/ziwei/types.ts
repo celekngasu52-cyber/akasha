@@ -102,3 +102,30 @@ export interface ZiWeiChart {
 
 /** Gender: 1 = male (阳), 0 = female (阴) — matches lunar-javascript. */
 export type Gender = 1 | 0
+
+/** One of the four forecast horizons. */
+export type ZiWeiForecastKind = 'year' | 'month' | 'day' | 'decade'
+
+/** A palace highlighted as a focus for a forecast horizon. */
+export interface PalaceFocus {
+  /** Branch index 0-11 of the focused palace. */
+  branchIndex: number
+  /** Palace name, e.g. "命宫", "财帛". */
+  name: string
+  /** Energy score: Σ main-star weights (紫微/天府/七杀/破军=3, others=1). */
+  score: number
+}
+
+/** A Zi Wei forecast horizon (流年/流月/流日/大限). */
+export interface ZiWeiForecastHorizon {
+  /** Which horizon this is. */
+  kind: ZiWeiForecastKind
+  /** ISO date the forecast targets (Gregorian, UTC). */
+  dateISO: string
+  /** Branch index of the active palace for this horizon. */
+  activePalaceIndex: number
+  /** Name of the active palace (流年命宫 / 大限宫 etc.). */
+  activePalaceName: string
+  /** Top-2 palaces by energy score. Exactly 2 entries. */
+  palaceFocus: PalaceFocus[]
+}

@@ -1,0 +1,124 @@
+/*
+ * Akasha design system — aesthetic direction: "warm archival manuscript".
+ *
+ * Reasoning: astrology data is spiritual but the target user is skeptical of
+ * woo-woo apps. An editorial / archival idiom signals rigor (sharp 2px borders,
+ * offset hard shadows, single dominant warm hue) while the parchment + ink
+ * palette references manuscript heritage without resorting to the purple/blue
+ * "mystic" cliché every generic astrology app uses. Bold but disciplined color,
+ * per the plan ("warna berani boleh, asal tegas dan tidak cheesy").
+ *
+ * Anti-slop: no linear color stops, no xl blur shadows, no frosted-glass
+ * surfaces, no backdrop-blur. One dominant hue (warm ochre/sienna), tint and
+ * shade of that same hue for surface variation. Borders are solid 2px; shadows
+ * are hard offset (4px 4px 0) not blurred.
+ */
+@import 'tailwindcss';
+
+/* ---- Design tokens (source of truth; consumed via var(--aka-*)) ---- */
+:root {
+  /* Palette — warm archival: ink, parchment, ochre accent. Single hue family. */
+  --aka-bg: #1a1612;            /* warm near-black ink (not pure black, not blue-black) */
+  --aka-surface: #221d17;       /* parchment-tinted dark surface */
+  --aka-surface-2: #2b241c;     /* raised surface (tint of same hue) */
+  --aka-fg: #f2ebd9;            /* warm parchment text */
+  --aka-muted: #a89a82;         /* muted ochre-grey for secondary text */
+  --aka-accent: #c8763a;        /* warm ochre/sienna — dominant accent */
+  --aka-accent-fg: #1a1612;     /* text on accent (ink) */
+  --aka-accent-soft: #3a2d1e;   /* accent tint for subtle fills */
+  --aka-border: #4a3f30;        /* warm border, tegas */
+  --aka-border-strong: #6b5a44; /* stronger border for emphasis */
+  --aka-success: #6b8e4e;       /* olive (warm side, not neon green) */
+  --aka-warning: #c8923a;       /* amber-ochre */
+  --aka-danger: #a84a3a;        /* terracotta red (warm, not neon) */
+
+  /* Typography — uncommon pairing: Fraunces (display serif, editorial) +
+   * IBM Plex Mono (mono, data/labels). Body uses Newsreader for readable long
+   * text with manuscript character. All three support Latin well. */
+  --aka-font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --aka-font-body: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --aka-font-mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+
+  /* Type scale (modular, 1.25 ratio) */
+  --aka-text-xs: 0.75rem;     /* 12px */
+  --aka-text-sm: 0.875rem;    /* 14px */
+  --aka-text-base: 1rem;      /* 16px */
+  --aka-text-lg: 1.25rem;     /* 20px */
+  --aka-text-xl: 1.5rem;      /* 24px */
+  --aka-text-2xl: 2rem;       /* 32px */
+  --aka-text-3xl: 2.5rem;     /* 40px */
+
+  /* Spacing — 4px base grid */
+  --aka-space-1: 0.25rem;   /* 4px */
+  --aka-space-2: 0.5rem;    /* 8px */
+  --aka-space-3: 0.75rem;   /* 12px */
+  --aka-space-4: 1rem;      /* 16px */
+  --aka-space-5: 1.5rem;    /* 24px */
+  --aka-space-6: 2rem;      /* 32px */
+  --aka-space-7: 3rem;      /* 48px */
+  --aka-space-8: 4rem;      /* 64px */
+
+  /* Radius — small, sharp (not pillowy) */
+  --aka-radius-sm: 2px;
+  --aka-radius: 4px;
+  --aka-radius-lg: 6px;
+
+  /* Border weights — tegas */
+  --aka-border-1: 1px;
+  --aka-border-2: 2px;
+
+  /* Shadow — hard offset, NOT blurred (no xl blur utility) */
+  --aka-shadow-offset: 4px;
+  --aka-shadow: var(--aka-shadow-offset) var(--aka-shadow-offset) 0 var(--aka-border-strong);
+  --aka-shadow-sm: 2px 2px 0 var(--aka-border);
+
+  /* Subtle paper grain via SVG noise data-URI (no external asset, no gradient).
+   * Very low opacity; layered on bg only. */
+  --aka-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* ---- Tailwind v4 theme mapping (utilities like bg-bg, text-fg, border-border) ---- */
+@theme {
+  --color-bg: var(--aka-bg);
+  --color-surface: var(--aka-surface);
+  --color-surface-2: var(--aka-surface-2);
+  --color-fg: var(--aka-fg);
+  --color-muted: var(--aka-muted);
+  --color-accent: var(--aka-accent);
+  --color-accent-fg: var(--aka-accent-fg);
+  --color-accent-soft: var(--aka-accent-soft);
+  --color-border: var(--aka-border);
+  --color-border-strong: var(--aka-border-strong);
+  --color-success: var(--aka-success);
+  --color-warning: var(--aka-warning);
+  --color-danger: var(--aka-danger);
+
+  --font-display: var(--aka-font-display);
+  --font-body: var(--aka-font-body);
+  --font-mono: var(--aka-font-mono);
+
+  --radius-sm: var(--aka-radius-sm);
+  --radius: var(--aka-radius);
+  --radius-lg: var(--aka-radius-lg);
+}
+
+/* Body defaults — fonts + bg with paper grain. No global margin/padding reset
+ * (Tailwind preflight handles that). */
+body {
+  font-family: var(--aka-font-body);
+  background-color: var(--aka-bg);
+  background-image: var(--aka-noise);
+  color: var(--aka-fg);
+}
+
+/* Headings use the display serif. */
+h1, h2, h3, h4 {
+  font-family: var(--aka-font-display);
+  color: var(--aka-fg);
+}
+
+/* Skeleton pulse — tint/shade fade of the surface token (no gradient). */
+@keyframes aka-skeleton-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}

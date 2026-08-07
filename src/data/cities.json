@@ -1,0 +1,3608 @@
+{
+  "_meta": {
+    "source": "BPS Daftar Kabupaten/Kota 2024 + geonames.org coordinates (regency/city seats)",
+    "fetched": "2026-08-07",
+    "note": "514 kabupaten/kota across 38 provinces. Coordinates are WGS84 decimal degrees of the regency/city seat. tzIANA: Asia/Jakarta (WIB), Asia/Makassar (WITA), Asia/Jayapura (WIT).",
+    "count": 514
+  },
+  "cities": [
+    {
+      "name": "Banda Aceh",
+      "province": "Aceh",
+      "lat": 5.5483,
+      "lng": 95.3238,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sabang",
+      "province": "Aceh",
+      "lat": 5.893,
+      "lng": 95.3136,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lhokseumawe",
+      "province": "Aceh",
+      "lat": 5.1816,
+      "lng": 97.1333,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Langsa",
+      "province": "Aceh",
+      "lat": 4.4636,
+      "lng": 97.9667,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Subulussalam",
+      "province": "Aceh",
+      "lat": 2.63,
+      "lng": 97.85,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Aceh Barat",
+      "province": "Aceh",
+      "lat": 4.452,
+      "lng": 96.326,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Aceh Barat Daya",
+      "province": "Aceh",
+      "lat": 3.766,
+      "lng": 96.88,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Aceh Besar",
+      "province": "Aceh",
+      "lat": 5.405,
+      "lng": 95.35,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Aceh Jaya",
+      "province": "Aceh",
+      "lat": 4.73,
+      "lng": 95.58,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Aceh Selatan",
+      "province": "Aceh",
+      "lat": 3.13,
+      "lng": 97.4,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Aceh Singkil",
+      "province": "Aceh",
+      "lat": 2.416,
+      "lng": 97.766,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Aceh Tamiang",
+      "province": "Aceh",
+      "lat": 4.275,
+      "lng": 97.95,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Aceh Tengah",
+      "province": "Aceh",
+      "lat": 4.616,
+      "lng": 96.83,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Aceh Tenggara",
+      "province": "Aceh",
+      "lat": 3.566,
+      "lng": 97.78,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Aceh Timur",
+      "province": "Aceh",
+      "lat": 4.466,
+      "lng": 97.68,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Aceh Utara",
+      "province": "Aceh",
+      "lat": 5.2,
+      "lng": 96.7,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bener Meriah",
+      "province": "Aceh",
+      "lat": 4.716,
+      "lng": 96.7,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bireuen",
+      "province": "Aceh",
+      "lat": 5.2,
+      "lng": 96.7,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Gayo Lues",
+      "province": "Aceh",
+      "lat": 3.966,
+      "lng": 97.766,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Nagan Raya",
+      "province": "Aceh",
+      "lat": 4.166,
+      "lng": 96.05,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pidie",
+      "province": "Aceh",
+      "lat": 5.316,
+      "lng": 95.9,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pidie Jaya",
+      "province": "Aceh",
+      "lat": 5.166,
+      "lng": 96.35,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Simeulue",
+      "province": "Aceh",
+      "lat": 2.616,
+      "lng": 96.05,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Medan",
+      "province": "Sumatera Utara",
+      "lat": 3.5952,
+      "lng": 98.6722,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Binjai",
+      "province": "Sumatera Utara",
+      "lat": 3.6,
+      "lng": 98.48,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tebing Tinggi",
+      "province": "Sumatera Utara",
+      "lat": 3.33,
+      "lng": 99.16,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pematangsiantar",
+      "province": "Sumatera Utara",
+      "lat": 2.96,
+      "lng": 99.06,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tanjungbalai",
+      "province": "Sumatera Utara",
+      "lat": 2.97,
+      "lng": 99.8,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sibolga",
+      "province": "Sumatera Utara",
+      "lat": 1.75,
+      "lng": 98.78,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Padang Sidempuan",
+      "province": "Sumatera Utara",
+      "lat": 1.38,
+      "lng": 99.27,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Gunungsitoli",
+      "province": "Sumatera Utara",
+      "lat": 1.29,
+      "lng": 97.62,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Asahan",
+      "province": "Sumatera Utara",
+      "lat": 2.566,
+      "lng": 99.633,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Batu Bara",
+      "province": "Sumatera Utara",
+      "lat": 3.2,
+      "lng": 99.466,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Dairi",
+      "province": "Sumatera Utara",
+      "lat": 2.916,
+      "lng": 98.2,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Deli Serdang",
+      "province": "Sumatera Utara",
+      "lat": 3.516,
+      "lng": 98.616,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Humbang Hasundutan",
+      "province": "Sumatera Utara",
+      "lat": 2.616,
+      "lng": 98.766,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Karo",
+      "province": "Sumatera Utara",
+      "lat": 3.266,
+      "lng": 98.5,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Labuhanbatu",
+      "province": "Sumatera Utara",
+      "lat": 2,
+      "lng": 99.733,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Labuhanbatu Selatan",
+      "province": "Sumatera Utara",
+      "lat": 1.416,
+      "lng": 99.716,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Labuhanbatu Utara",
+      "province": "Sumatera Utara",
+      "lat": 2.216,
+      "lng": 99.683,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Mandailing Natal",
+      "province": "Sumatera Utara",
+      "lat": 0.716,
+      "lng": 99.416,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Nias",
+      "province": "Sumatera Utara",
+      "lat": 0.916,
+      "lng": 97.983,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Nias Barat",
+      "province": "Sumatera Utara",
+      "lat": 0.716,
+      "lng": 97.683,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Nias Selatan",
+      "province": "Sumatera Utara",
+      "lat": 0.766,
+      "lng": 97.716,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Nias Utara",
+      "province": "Sumatera Utara",
+      "lat": 1.166,
+      "lng": 97.533,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Padang Lawas",
+      "province": "Sumatera Utara",
+      "lat": 1.166,
+      "lng": 99.733,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Padang Lawas Utara",
+      "province": "Sumatera Utara",
+      "lat": 1.416,
+      "lng": 99.783,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Samosir",
+      "province": "Sumatera Utara",
+      "lat": 2.566,
+      "lng": 98.733,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Serdang Bedagai",
+      "province": "Sumatera Utara",
+      "lat": 3.566,
+      "lng": 99.033,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tapanuli Selatan",
+      "province": "Sumatera Utara",
+      "lat": 1,
+      "lng": 99.733,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tapanuli Tengah",
+      "province": "Sumatera Utara",
+      "lat": 2.066,
+      "lng": 99.05,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tapanuli Utara",
+      "province": "Sumatera Utara",
+      "lat": 2.516,
+      "lng": 98.833,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Toba",
+      "province": "Sumatera Utara",
+      "lat": 2.583,
+      "lng": 99,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Padang",
+      "province": "Sumatera Barat",
+      "lat": -0.9492,
+      "lng": 100.3543,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bukittinggi",
+      "province": "Sumatera Barat",
+      "lat": -0.305,
+      "lng": 100.369,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Padangpanjang",
+      "province": "Sumatera Barat",
+      "lat": -0.45,
+      "lng": 100.416,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pariaman",
+      "province": "Sumatera Barat",
+      "lat": -0.616,
+      "lng": 100.116,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Payakumbuh",
+      "province": "Sumatera Barat",
+      "lat": -0.25,
+      "lng": 100.633,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sawahlunto",
+      "province": "Sumatera Barat",
+      "lat": -0.666,
+      "lng": 100.766,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Solok",
+      "province": "Sumatera Barat",
+      "lat": -0.8,
+      "lng": 100.666,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Agam",
+      "province": "Sumatera Barat",
+      "lat": -0.233,
+      "lng": 100.266,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Dharmasraya",
+      "province": "Sumatera Barat",
+      "lat": -0.916,
+      "lng": 101.566,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kepulauan Mentawai",
+      "province": "Sumatera Barat",
+      "lat": -1.016,
+      "lng": 99,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lima Puluh Kota",
+      "province": "Sumatera Barat",
+      "lat": 0.116,
+      "lng": 100.5,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Padang Pariaman",
+      "province": "Sumatera Barat",
+      "lat": -0.716,
+      "lng": 100.116,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pasaman",
+      "province": "Sumatera Barat",
+      "lat": 0.116,
+      "lng": 99.866,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pasaman Barat",
+      "province": "Sumatera Barat",
+      "lat": 0.033,
+      "lng": 99.516,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pesisir Selatan",
+      "province": "Sumatera Barat",
+      "lat": -1.416,
+      "lng": 100.583,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sijunjung",
+      "province": "Sumatera Barat",
+      "lat": -0.75,
+      "lng": 101.05,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Solok Selatan",
+      "province": "Sumatera Barat",
+      "lat": -1.416,
+      "lng": 101.183,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tanah Datar",
+      "province": "Sumatera Barat",
+      "lat": -0.45,
+      "lng": 100.566,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pekanbaru",
+      "province": "Riau",
+      "lat": 0.5071,
+      "lng": 101.4478,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Dumai",
+      "province": "Riau",
+      "lat": 1.666,
+      "lng": 101.45,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bengkalis",
+      "province": "Riau",
+      "lat": 1.483,
+      "lng": 102.083,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Indragiri Hilir",
+      "province": "Riau",
+      "lat": 0.816,
+      "lng": 103.45,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Indragiri Hulu",
+      "province": "Riau",
+      "lat": 0.416,
+      "lng": 102.3,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kampar",
+      "province": "Riau",
+      "lat": 0.3,
+      "lng": 101.05,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kepulauan Meranti",
+      "province": "Riau",
+      "lat": 1.166,
+      "lng": 102.666,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kuantan Singingi",
+      "province": "Riau",
+      "lat": -0.35,
+      "lng": 101.566,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pelalawan",
+      "province": "Riau",
+      "lat": 0.183,
+      "lng": 101.833,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Rokan Hilir",
+      "province": "Riau",
+      "lat": 2.016,
+      "lng": 100.766,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Rokan Hulu",
+      "province": "Riau",
+      "lat": 1.083,
+      "lng": 100.266,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Siak",
+      "province": "Riau",
+      "lat": 0.966,
+      "lng": 102,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Jambi",
+      "province": "Jambi",
+      "lat": -1.59,
+      "lng": 103.61,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sungai Penuh",
+      "province": "Jambi",
+      "lat": -2.066,
+      "lng": 101.366,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Batanghari",
+      "province": "Jambi",
+      "lat": -1.05,
+      "lng": 103.633,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bungo",
+      "province": "Jambi",
+      "lat": -1.483,
+      "lng": 101.95,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kerinci",
+      "province": "Jambi",
+      "lat": -2.05,
+      "lng": 101.416,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Merangin",
+      "province": "Jambi",
+      "lat": -1.916,
+      "lng": 102,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Muaro Jambi",
+      "province": "Jambi",
+      "lat": -1.616,
+      "lng": 103.7,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sarolangun",
+      "province": "Jambi",
+      "lat": -2.116,
+      "lng": 102.7,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tanjung Jabung Barat",
+      "province": "Jambi",
+      "lat": -0.833,
+      "lng": 103.5,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tanjung Jabung Timur",
+      "province": "Jambi",
+      "lat": -1.25,
+      "lng": 104.183,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tebo",
+      "province": "Jambi",
+      "lat": -1.05,
+      "lng": 102.183,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Palembang",
+      "province": "Sumatera Selatan",
+      "lat": -2.9761,
+      "lng": 104.7754,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Prabumulih",
+      "province": "Sumatera Selatan",
+      "lat": -3.433,
+      "lng": 104.233,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pagar Alam",
+      "province": "Sumatera Selatan",
+      "lat": -4.05,
+      "lng": 103.25,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lubuklinggau",
+      "province": "Sumatera Selatan",
+      "lat": -3.3,
+      "lng": 102.866,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Banyuasin",
+      "province": "Sumatera Selatan",
+      "lat": -2.3,
+      "lng": 104.566,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Empat Lawang",
+      "province": "Sumatera Selatan",
+      "lat": -3.416,
+      "lng": 103.05,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lahat",
+      "province": "Sumatera Selatan",
+      "lat": -3.766,
+      "lng": 103.866,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Muara Enim",
+      "province": "Sumatera Selatan",
+      "lat": -3.65,
+      "lng": 104.2,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Musi Banyuasin",
+      "province": "Sumatera Selatan",
+      "lat": -2.05,
+      "lng": 104.066,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Musi Rawas",
+      "province": "Sumatera Selatan",
+      "lat": -2.966,
+      "lng": 103.05,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Musi Rawas Utara",
+      "province": "Sumatera Selatan",
+      "lat": -2.5,
+      "lng": 102.75,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Ogan Ilir",
+      "province": "Sumatera Selatan",
+      "lat": -3.066,
+      "lng": 104.616,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Ogan Komering Ilir",
+      "province": "Sumatera Selatan",
+      "lat": -3.05,
+      "lng": 105.3,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Ogan Komering Ulu",
+      "province": "Sumatera Selatan",
+      "lat": -3.966,
+      "lng": 104.516,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Ogan Komering Ulu Selatan",
+      "province": "Sumatera Selatan",
+      "lat": -4.166,
+      "lng": 104.3,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Ogan Komering Ulu Timur",
+      "province": "Sumatera Selatan",
+      "lat": -3.916,
+      "lng": 104.866,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Penukal Abab Lematang Ilir",
+      "province": "Sumatera Selatan",
+      "lat": -2.716,
+      "lng": 104.833,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bengkulu",
+      "province": "Bengkulu",
+      "lat": -3.8004,
+      "lng": 102.2655,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bengkulu Selatan",
+      "province": "Bengkulu",
+      "lat": -4.416,
+      "lng": 102.466,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bengkulu Tengah",
+      "province": "Bengkulu",
+      "lat": -3.8,
+      "lng": 102.366,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bengkulu Utara",
+      "province": "Bengkulu",
+      "lat": -3.416,
+      "lng": 102.183,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kaur",
+      "province": "Bengkulu",
+      "lat": -4.416,
+      "lng": 102.866,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kepahiang",
+      "province": "Bengkulu",
+      "lat": -3.633,
+      "lng": 102.566,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lebong",
+      "province": "Bengkulu",
+      "lat": -3.25,
+      "lng": 102.316,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Mukomuko",
+      "province": "Bengkulu",
+      "lat": -2.583,
+      "lng": 101.466,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Rejang Lebong",
+      "province": "Bengkulu",
+      "lat": -3.466,
+      "lng": 102.616,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Seluma",
+      "province": "Bengkulu",
+      "lat": -3.916,
+      "lng": 102.416,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kepulauan Enggano",
+      "province": "Bengkulu",
+      "lat": -5.316,
+      "lng": 102.25,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bandar Lampung",
+      "province": "Lampung",
+      "lat": -5.3971,
+      "lng": 105.2668,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Metro",
+      "province": "Lampung",
+      "lat": -5.116,
+      "lng": 105.316,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lampung Barat",
+      "province": "Lampung",
+      "lat": -5.116,
+      "lng": 104.05,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lampung Selatan",
+      "province": "Lampung",
+      "lat": -5.55,
+      "lng": 105.516,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lampung Tengah",
+      "province": "Lampung",
+      "lat": -4.916,
+      "lng": 105.266,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lampung Timur",
+      "province": "Lampung",
+      "lat": -5.016,
+      "lng": 105.733,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lampung Utara",
+      "province": "Lampung",
+      "lat": -4.766,
+      "lng": 104.833,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Mesuji",
+      "province": "Lampung",
+      "lat": -4.016,
+      "lng": 105.533,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pesawaran",
+      "province": "Lampung",
+      "lat": -5.416,
+      "lng": 105.116,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pesisir Barat",
+      "province": "Lampung",
+      "lat": -5.416,
+      "lng": 104.166,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pringsewu",
+      "province": "Lampung",
+      "lat": -5.366,
+      "lng": 104.966,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tanggamus",
+      "province": "Lampung",
+      "lat": -5.466,
+      "lng": 104.666,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tulang Bawang",
+      "province": "Lampung",
+      "lat": -4.416,
+      "lng": 105.7,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tulang Bawang Barat",
+      "province": "Lampung",
+      "lat": -4.516,
+      "lng": 105.2,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Way Kanan",
+      "province": "Lampung",
+      "lat": -4.066,
+      "lng": 104.416,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pangkalpinang",
+      "province": "Kepulauan Bangka Belitung",
+      "lat": -2.129,
+      "lng": 106.1133,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bangka",
+      "province": "Kepulauan Bangka Belitung",
+      "lat": -1.916,
+      "lng": 106.05,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bangka Barat",
+      "province": "Kepulauan Bangka Belitung",
+      "lat": -1.516,
+      "lng": 105.366,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bangka Selatan",
+      "province": "Kepulauan Bangka Belitung",
+      "lat": -3.05,
+      "lng": 106.716,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bangka Tengah",
+      "province": "Kepulauan Bangka Belitung",
+      "lat": -2.416,
+      "lng": 106.566,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Belitung",
+      "province": "Kepulauan Bangka Belitung",
+      "lat": -3.083,
+      "lng": 107.666,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Belitung Timur",
+      "province": "Kepulauan Bangka Belitung",
+      "lat": -2.816,
+      "lng": 108.116,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tanjungpinang",
+      "province": "Kepulauan Riau",
+      "lat": 0.9167,
+      "lng": 104.45,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Batam",
+      "province": "Kepulauan Riau",
+      "lat": 1.0456,
+      "lng": 104.0306,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bintan",
+      "province": "Kepulauan Riau",
+      "lat": 1.066,
+      "lng": 104.5,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Karimun",
+      "province": "Kepulauan Riau",
+      "lat": 1.016,
+      "lng": 103.416,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lingga",
+      "province": "Kepulauan Riau",
+      "lat": -0.05,
+      "lng": 104.616,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Natuna",
+      "province": "Kepulauan Riau",
+      "lat": 3.966,
+      "lng": 108.066,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Anambas",
+      "province": "Kepulauan Riau",
+      "lat": 3.25,
+      "lng": 106.25,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Jakarta Pusat",
+      "province": "DKI Jakarta",
+      "lat": -6.181,
+      "lng": 106.8228,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Jakarta Utara",
+      "province": "DKI Jakarta",
+      "lat": -6.138,
+      "lng": 106.8444,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Jakarta Barat",
+      "province": "DKI Jakarta",
+      "lat": -6.155,
+      "lng": 106.783,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Jakarta Selatan",
+      "province": "DKI Jakarta",
+      "lat": -6.27,
+      "lng": 106.808,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Jakarta Timur",
+      "province": "DKI Jakarta",
+      "lat": -6.225,
+      "lng": 106.9,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kepulauan Seribu",
+      "province": "DKI Jakarta",
+      "lat": -5.616,
+      "lng": 106.716,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bandung",
+      "province": "Jawa Barat",
+      "lat": -6.9175,
+      "lng": 107.6191,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bogor",
+      "province": "Jawa Barat",
+      "lat": -6.595,
+      "lng": 106.8166,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Cimahi",
+      "province": "Jawa Barat",
+      "lat": -6.883,
+      "lng": 107.541,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Depok",
+      "province": "Jawa Barat",
+      "lat": -6.4025,
+      "lng": 106.7942,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sukabumi",
+      "province": "Jawa Barat",
+      "lat": -6.927,
+      "lng": 106.927,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tasikmalaya",
+      "province": "Jawa Barat",
+      "lat": -7.327,
+      "lng": 108.22,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Cirebon",
+      "province": "Jawa Barat",
+      "lat": -6.733,
+      "lng": 108.55,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Banjar",
+      "province": "Jawa Barat",
+      "lat": -7.366,
+      "lng": 108.533,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bandung Barat",
+      "province": "Jawa Barat",
+      "lat": -6.85,
+      "lng": 107.466,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Garut",
+      "province": "Jawa Barat",
+      "lat": -7.216,
+      "lng": 107.9,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Indramayu",
+      "province": "Jawa Barat",
+      "lat": -6.326,
+      "lng": 108.323,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Karawang",
+      "province": "Jawa Barat",
+      "lat": -6.3,
+      "lng": 107.3,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kuningan",
+      "province": "Jawa Barat",
+      "lat": -6.983,
+      "lng": 108.483,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Majalengka",
+      "province": "Jawa Barat",
+      "lat": -6.833,
+      "lng": 108.233,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pangandaran",
+      "province": "Jawa Barat",
+      "lat": -7.6,
+      "lng": 108.65,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Purwakarta",
+      "province": "Jawa Barat",
+      "lat": -6.55,
+      "lng": 107.433,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Subang",
+      "province": "Jawa Barat",
+      "lat": -6.566,
+      "lng": 107.75,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sumedang",
+      "province": "Jawa Barat",
+      "lat": -6.833,
+      "lng": 107.916,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Cianjur",
+      "province": "Jawa Barat",
+      "lat": -6.816,
+      "lng": 107.15,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Ciamis",
+      "province": "Jawa Barat",
+      "lat": -7.333,
+      "lng": 108.333,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Semarang",
+      "province": "Jawa Tengah",
+      "lat": -6.9667,
+      "lng": 110.4167,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Surakarta",
+      "province": "Jawa Tengah",
+      "lat": -7.5755,
+      "lng": 110.8244,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tegal",
+      "province": "Jawa Tengah",
+      "lat": -6.869,
+      "lng": 109.14,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pekalongan",
+      "province": "Jawa Tengah",
+      "lat": -6.888,
+      "lng": 109.669,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Salatiga",
+      "province": "Jawa Tengah",
+      "lat": -7.331,
+      "lng": 110.509,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Magelang",
+      "province": "Jawa Tengah",
+      "lat": -7.47,
+      "lng": 110.217,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kudus",
+      "province": "Jawa Tengah",
+      "lat": -6.805,
+      "lng": 110.84,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Jepara",
+      "province": "Jawa Tengah",
+      "lat": -6.581,
+      "lng": 110.664,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Demak",
+      "province": "Jawa Tengah",
+      "lat": -6.886,
+      "lng": 110.636,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Rembang",
+      "province": "Jawa Tengah",
+      "lat": -6.711,
+      "lng": 111.35,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pati",
+      "province": "Jawa Tengah",
+      "lat": -6.76,
+      "lng": 111.083,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Blora",
+      "province": "Jawa Tengah",
+      "lat": -6.965,
+      "lng": 111.419,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tuban",
+      "province": "Jawa Tengah",
+      "lat": -6.966,
+      "lng": 112.033,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bojonegoro",
+      "province": "Jawa Tengah",
+      "lat": -7.266,
+      "lng": 111.816,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Grobogan",
+      "province": "Jawa Tengah",
+      "lat": -7.05,
+      "lng": 110.9,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sragen",
+      "province": "Jawa Tengah",
+      "lat": -7.43,
+      "lng": 111,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Karanganyar",
+      "province": "Jawa Tengah",
+      "lat": -7.65,
+      "lng": 110.966,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Wonogiri",
+      "province": "Jawa Tengah",
+      "lat": -7.933,
+      "lng": 110.933,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sukoharjo",
+      "province": "Jawa Tengah",
+      "lat": -7.666,
+      "lng": 110.833,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Klaten",
+      "province": "Jawa Tengah",
+      "lat": -7.7,
+      "lng": 110.6,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Boyolali",
+      "province": "Jawa Tengah",
+      "lat": -7.333,
+      "lng": 110.6,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kendal",
+      "province": "Jawa Tengah",
+      "lat": -6.916,
+      "lng": 110.2,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Batang",
+      "province": "Jawa Tengah",
+      "lat": -6.916,
+      "lng": 109.75,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pemalang",
+      "province": "Jawa Tengah",
+      "lat": -7.15,
+      "lng": 109.383,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Purbalingga",
+      "province": "Jawa Tengah",
+      "lat": -7.383,
+      "lng": 109.35,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Banyumas",
+      "province": "Jawa Tengah",
+      "lat": -7.466,
+      "lng": 109.25,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Cilacap",
+      "province": "Jawa Tengah",
+      "lat": -7.733,
+      "lng": 109,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kebumen",
+      "province": "Jawa Tengah",
+      "lat": -7.666,
+      "lng": 109.65,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Purworejo",
+      "province": "Jawa Tengah",
+      "lat": -7.7,
+      "lng": 110,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Wonosobo",
+      "province": "Jawa Tengah",
+      "lat": -7.366,
+      "lng": 109.9,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Temanggung",
+      "province": "Jawa Tengah",
+      "lat": -7.266,
+      "lng": 110.183,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Banjarnegara",
+      "province": "Jawa Tengah",
+      "lat": -7.4,
+      "lng": 109.7,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Brebes",
+      "province": "Jawa Tengah",
+      "lat": -6.866,
+      "lng": 109.066,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Yogyakarta",
+      "province": "DI Yogyakarta",
+      "lat": -7.7956,
+      "lng": 110.3695,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sleman",
+      "province": "DI Yogyakarta",
+      "lat": -7.716,
+      "lng": 110.366,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bantul",
+      "province": "DI Yogyakarta",
+      "lat": -7.883,
+      "lng": 110.333,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kulon Progo",
+      "province": "DI Yogyakarta",
+      "lat": -7.833,
+      "lng": 110.166,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Gunungkidul",
+      "province": "DI Yogyakarta",
+      "lat": -7.966,
+      "lng": 110.616,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Surabaya",
+      "province": "Jawa Timur",
+      "lat": -7.2575,
+      "lng": 112.7521,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Malang",
+      "province": "Jawa Timur",
+      "lat": -7.9667,
+      "lng": 112.6333,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kediri",
+      "province": "Jawa Timur",
+      "lat": -7.833,
+      "lng": 112.0167,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Madiun",
+      "province": "Jawa Timur",
+      "lat": -7.629,
+      "lng": 111.523,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Mojokerto",
+      "province": "Jawa Timur",
+      "lat": -7.466,
+      "lng": 112.433,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Jombang",
+      "province": "Jawa Timur",
+      "lat": -7.55,
+      "lng": 112.233,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pasuruan",
+      "province": "Jawa Timur",
+      "lat": -7.645,
+      "lng": 112.907,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Probolinggo",
+      "province": "Jawa Timur",
+      "lat": -7.754,
+      "lng": 113.216,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Batu",
+      "province": "Jawa Timur",
+      "lat": -7.866,
+      "lng": 112.533,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Blitar",
+      "province": "Jawa Timur",
+      "lat": -8.099,
+      "lng": 112.171,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Gresik",
+      "province": "Jawa Timur",
+      "lat": -7.156,
+      "lng": 112.646,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sidoarjo",
+      "province": "Jawa Timur",
+      "lat": -7.447,
+      "lng": 112.718,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bangkalan",
+      "province": "Jawa Timur",
+      "lat": -7.05,
+      "lng": 112.75,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sumenep",
+      "province": "Jawa Timur",
+      "lat": -7,
+      "lng": 113.85,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pamekasan",
+      "province": "Jawa Timur",
+      "lat": -7.166,
+      "lng": 113.483,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sampang",
+      "province": "Jawa Timur",
+      "lat": -7.233,
+      "lng": 113.25,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Jember",
+      "province": "Jawa Timur",
+      "lat": -8.166,
+      "lng": 113.7,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Banyuwangi",
+      "province": "Jawa Timur",
+      "lat": -8.219,
+      "lng": 114.369,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bondowoso",
+      "province": "Jawa Timur",
+      "lat": -7.916,
+      "lng": 113.833,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Situbondo",
+      "province": "Jawa Timur",
+      "lat": -7.705,
+      "lng": 114.009,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lumajang",
+      "province": "Jawa Timur",
+      "lat": -8.116,
+      "lng": 113.216,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lamongan",
+      "province": "Jawa Timur",
+      "lat": -7.116,
+      "lng": 112.416,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Nganjuk",
+      "province": "Jawa Timur",
+      "lat": -7.633,
+      "lng": 111.9,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Magetan",
+      "province": "Jawa Timur",
+      "lat": -7.65,
+      "lng": 111.466,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Ngawi",
+      "province": "Jawa Timur",
+      "lat": -7.516,
+      "lng": 111.45,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Ponorogo",
+      "province": "Jawa Timur",
+      "lat": -7.7,
+      "lng": 111.466,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pacitan",
+      "province": "Jawa Timur",
+      "lat": -8.116,
+      "lng": 111.133,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Trenggalek",
+      "province": "Jawa Timur",
+      "lat": -8.05,
+      "lng": 111.716,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tulungagung",
+      "province": "Jawa Timur",
+      "lat": -8.066,
+      "lng": 111.9,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Serang",
+      "province": "Banten",
+      "lat": -6.12,
+      "lng": 106.15,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tangerang",
+      "province": "Banten",
+      "lat": -6.1783,
+      "lng": 106.6319,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Cilegon",
+      "province": "Banten",
+      "lat": -6.002,
+      "lng": 106.011,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tangerang Selatan",
+      "province": "Banten",
+      "lat": -6.289,
+      "lng": 106.718,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pandeglang",
+      "province": "Banten",
+      "lat": -6.316,
+      "lng": 106.116,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Lebak",
+      "province": "Banten",
+      "lat": -6.566,
+      "lng": 106.266,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Denpasar",
+      "province": "Bali",
+      "lat": -8.6705,
+      "lng": 115.2126,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Badung",
+      "province": "Bali",
+      "lat": -8.583,
+      "lng": 115.183,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bangli",
+      "province": "Bali",
+      "lat": -8.466,
+      "lng": 115.35,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Buleleng",
+      "province": "Bali",
+      "lat": -8.116,
+      "lng": 115.083,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Gianyar",
+      "province": "Bali",
+      "lat": -8.533,
+      "lng": 115.316,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Jembrana",
+      "province": "Bali",
+      "lat": -8.366,
+      "lng": 114.666,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Karangasem",
+      "province": "Bali",
+      "lat": -8.416,
+      "lng": 115.583,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Klungkung",
+      "province": "Bali",
+      "lat": -8.533,
+      "lng": 115.4,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Tabanan",
+      "province": "Bali",
+      "lat": -8.533,
+      "lng": 115.116,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Mataram",
+      "province": "Nusa Tenggara Barat",
+      "lat": -8.5833,
+      "lng": 116.1167,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bima",
+      "province": "Nusa Tenggara Barat",
+      "lat": -8.466,
+      "lng": 118.733,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Lombok Barat",
+      "province": "Nusa Tenggara Barat",
+      "lat": -8.633,
+      "lng": 116.116,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Lombok Tengah",
+      "province": "Nusa Tenggara Barat",
+      "lat": -8.666,
+      "lng": 116.316,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Lombok Timur",
+      "province": "Nusa Tenggara Barat",
+      "lat": -8.566,
+      "lng": 116.566,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Lombok Utara",
+      "province": "Nusa Tenggara Barat",
+      "lat": -8.366,
+      "lng": 116.35,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sumbawa",
+      "province": "Nusa Tenggara Barat",
+      "lat": -8.5,
+      "lng": 117.416,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sumbawa Barat",
+      "province": "Nusa Tenggara Barat",
+      "lat": -8.633,
+      "lng": 117.016,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Dompu",
+      "province": "Nusa Tenggara Barat",
+      "lat": -8.533,
+      "lng": 118.466,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kupang",
+      "province": "Nusa Tenggara Timur",
+      "lat": -10.1772,
+      "lng": 123.607,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Alor",
+      "province": "Nusa Tenggara Timur",
+      "lat": -8.266,
+      "lng": 124.733,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Belu",
+      "province": "Nusa Tenggara Timur",
+      "lat": -9.4,
+      "lng": 124.9,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Ende",
+      "province": "Nusa Tenggara Timur",
+      "lat": -8.833,
+      "lng": 121.666,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Flores Timur",
+      "province": "Nusa Tenggara Timur",
+      "lat": -8.3,
+      "lng": 122.8,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Lembata",
+      "province": "Nusa Tenggara Timur",
+      "lat": -8.366,
+      "lng": 123.466,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Malaka",
+      "province": "Nusa Tenggara Timur",
+      "lat": -9.516,
+      "lng": 124.866,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Manggarai",
+      "province": "Nusa Tenggara Timur",
+      "lat": -8.533,
+      "lng": 120.3,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Manggarai Barat",
+      "province": "Nusa Tenggara Timur",
+      "lat": -8.566,
+      "lng": 120.016,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Manggarai Timur",
+      "province": "Nusa Tenggara Timur",
+      "lat": -8.566,
+      "lng": 120.666,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Nagekeo",
+      "province": "Nusa Tenggara Timur",
+      "lat": -8.8,
+      "lng": 121.116,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Ngada",
+      "province": "Nusa Tenggara Timur",
+      "lat": -8.583,
+      "lng": 121,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Rote Ndao",
+      "province": "Nusa Tenggara Timur",
+      "lat": -10.766,
+      "lng": 123.416,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sabu Raijua",
+      "province": "Nusa Tenggara Timur",
+      "lat": -10.483,
+      "lng": 121.816,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sikka",
+      "province": "Nusa Tenggara Timur",
+      "lat": -8.5,
+      "lng": 122.25,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sumba Barat",
+      "province": "Nusa Tenggara Timur",
+      "lat": -9.433,
+      "lng": 119.233,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sumba Barat Daya",
+      "province": "Nusa Tenggara Timur",
+      "lat": -9.916,
+      "lng": 118.833,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sumba Tengah",
+      "province": "Nusa Tenggara Timur",
+      "lat": -9.533,
+      "lng": 119.366,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sumba Timur",
+      "province": "Nusa Tenggara Timur",
+      "lat": -9.866,
+      "lng": 120.3,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Timor Tengah Selatan",
+      "province": "Nusa Tenggara Timur",
+      "lat": -9.416,
+      "lng": 124.166,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Timor Tengah Utara",
+      "province": "Nusa Tenggara Timur",
+      "lat": -9.366,
+      "lng": 124.416,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Pontianak",
+      "province": "Kalimantan Barat",
+      "lat": -0.0264,
+      "lng": 109.3425,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Singkawang",
+      "province": "Kalimantan Barat",
+      "lat": 0.905,
+      "lng": 108.883,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bengkayang",
+      "province": "Kalimantan Barat",
+      "lat": 0.916,
+      "lng": 109.35,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kapuas Hulu",
+      "province": "Kalimantan Barat",
+      "lat": 0.833,
+      "lng": 112.933,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kayong Utara",
+      "province": "Kalimantan Barat",
+      "lat": -1.766,
+      "lng": 110.166,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Ketapang",
+      "province": "Kalimantan Barat",
+      "lat": -1.85,
+      "lng": 110.183,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kubu Raya",
+      "province": "Kalimantan Barat",
+      "lat": -0.25,
+      "lng": 109.183,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Landak",
+      "province": "Kalimantan Barat",
+      "lat": 0.366,
+      "lng": 109.716,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Melawi",
+      "province": "Kalimantan Barat",
+      "lat": -0.833,
+      "lng": 112,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Mempawah",
+      "province": "Kalimantan Barat",
+      "lat": 0.766,
+      "lng": 108.95,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sambas",
+      "province": "Kalimantan Barat",
+      "lat": 1.3,
+      "lng": 109.4,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sanggau",
+      "province": "Kalimantan Barat",
+      "lat": 0.116,
+      "lng": 110.583,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sekadau",
+      "province": "Kalimantan Barat",
+      "lat": 0.05,
+      "lng": 111.166,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sintang",
+      "province": "Kalimantan Barat",
+      "lat": 0.066,
+      "lng": 111.483,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Palangka Raya",
+      "province": "Kalimantan Tengah",
+      "lat": -2.2096,
+      "lng": 113.9108,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Barito Selatan",
+      "province": "Kalimantan Tengah",
+      "lat": -2.416,
+      "lng": 115,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Barito Timur",
+      "province": "Kalimantan Tengah",
+      "lat": -2.016,
+      "lng": 115.516,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Barito Utara",
+      "province": "Kalimantan Tengah",
+      "lat": -1.05,
+      "lng": 114.833,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Gunung Mas",
+      "province": "Kalimantan Tengah",
+      "lat": -1.416,
+      "lng": 113.533,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kapuas",
+      "province": "Kalimantan Tengah",
+      "lat": -2.533,
+      "lng": 113.366,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Katingan",
+      "province": "Kalimantan Tengah",
+      "lat": -2.266,
+      "lng": 113.216,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kotawaringin Barat",
+      "province": "Kalimantan Tengah",
+      "lat": -2.616,
+      "lng": 111.416,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kotawaringin Timur",
+      "province": "Kalimantan Tengah",
+      "lat": -2.233,
+      "lng": 112,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Lamandau",
+      "province": "Kalimantan Tengah",
+      "lat": -2.833,
+      "lng": 111.516,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Murung Raya",
+      "province": "Kalimantan Tengah",
+      "lat": -0.916,
+      "lng": 114.066,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Pulang Pisau",
+      "province": "Kalimantan Tengah",
+      "lat": -2.866,
+      "lng": 114,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sukamara",
+      "province": "Kalimantan Tengah",
+      "lat": -2.416,
+      "lng": 111.05,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Seruyan",
+      "province": "Kalimantan Tengah",
+      "lat": -2.6,
+      "lng": 112.116,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Banjarmasin",
+      "province": "Kalimantan Selatan",
+      "lat": -3.3194,
+      "lng": 114.5908,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Banjarbaru",
+      "province": "Kalimantan Selatan",
+      "lat": -3.466,
+      "lng": 114.833,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Tanah Laut",
+      "province": "Kalimantan Selatan",
+      "lat": -3.633,
+      "lng": 114.816,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Barito Kuala",
+      "province": "Kalimantan Selatan",
+      "lat": -3,
+      "lng": 114.75,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Tapin",
+      "province": "Kalimantan Selatan",
+      "lat": -3.35,
+      "lng": 115.05,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Hulu Sungai Selatan",
+      "province": "Kalimantan Selatan",
+      "lat": -2.533,
+      "lng": 115.166,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Hulu Sungai Tengah",
+      "province": "Kalimantan Selatan",
+      "lat": -2.516,
+      "lng": 115.266,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Hulu Sungai Utara",
+      "province": "Kalimantan Selatan",
+      "lat": -2.316,
+      "lng": 115.3,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Tabalong",
+      "province": "Kalimantan Selatan",
+      "lat": -1.833,
+      "lng": 115.266,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Tanah Bumbu",
+      "province": "Kalimantan Selatan",
+      "lat": -3.716,
+      "lng": 115.766,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kotabaru",
+      "province": "Kalimantan Selatan",
+      "lat": -3.25,
+      "lng": 116.166,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Balangan",
+      "province": "Kalimantan Selatan",
+      "lat": -2.166,
+      "lng": 115.466,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Samarinda",
+      "province": "Kalimantan Timur",
+      "lat": -0.5022,
+      "lng": 117.1536,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Balikpapan",
+      "province": "Kalimantan Timur",
+      "lat": -1.2379,
+      "lng": 116.8529,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bontang",
+      "province": "Kalimantan Timur",
+      "lat": 0.133,
+      "lng": 117.483,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Berau",
+      "province": "Kalimantan Timur",
+      "lat": 2.183,
+      "lng": 118,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kutai Barat",
+      "province": "Kalimantan Timur",
+      "lat": 0.083,
+      "lng": 115.8,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kutai Kartanegara",
+      "province": "Kalimantan Timur",
+      "lat": -0.416,
+      "lng": 117,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kutai Timur",
+      "province": "Kalimantan Timur",
+      "lat": 0.35,
+      "lng": 117.016,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Mahakam Ulu",
+      "province": "Kalimantan Timur",
+      "lat": -0.533,
+      "lng": 115.533,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Paser",
+      "province": "Kalimantan Timur",
+      "lat": -1.35,
+      "lng": 116.4,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Penajam Paser Utara",
+      "province": "Kalimantan Timur",
+      "lat": -1.2,
+      "lng": 116.633,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Tanjung Selor",
+      "province": "Kalimantan Utara",
+      "lat": 2.833,
+      "lng": 117.366,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bulungan",
+      "province": "Kalimantan Utara",
+      "lat": 2.833,
+      "lng": 117.366,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Malinau",
+      "province": "Kalimantan Utara",
+      "lat": 3.533,
+      "lng": 116.616,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Tana Tidung",
+      "province": "Kalimantan Utara",
+      "lat": 3.466,
+      "lng": 117.533,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Nunukan",
+      "province": "Kalimantan Utara",
+      "lat": 4.166,
+      "lng": 117.666,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Tarakan",
+      "province": "Kalimantan Utara",
+      "lat": 3.3,
+      "lng": 117.633,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Manado",
+      "province": "Sulawesi Utara",
+      "lat": 1.4748,
+      "lng": 124.8421,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bitung",
+      "province": "Sulawesi Utara",
+      "lat": 1.45,
+      "lng": 125.2,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Tomohon",
+      "province": "Sulawesi Utara",
+      "lat": 1.316,
+      "lng": 124.833,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kotamobagu",
+      "province": "Sulawesi Utara",
+      "lat": 0.733,
+      "lng": 124.316,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bolaang Mongondow",
+      "province": "Sulawesi Utara",
+      "lat": 0.733,
+      "lng": 124.316,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bolaang Mongondow Selatan",
+      "province": "Sulawesi Utara",
+      "lat": 0.416,
+      "lng": 124.183,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bolaang Mongondow Timur",
+      "province": "Sulawesi Utara",
+      "lat": 0.633,
+      "lng": 124.533,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bolaang Mongondow Utara",
+      "province": "Sulawesi Utara",
+      "lat": 0.95,
+      "lng": 124.483,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kepulauan Sangihe",
+      "province": "Sulawesi Utara",
+      "lat": 3.766,
+      "lng": 125.416,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kepulauan Siau Tagulandang Biaro",
+      "province": "Sulawesi Utara",
+      "lat": 2.716,
+      "lng": 125.4,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kepulauan Talaud",
+      "province": "Sulawesi Utara",
+      "lat": 4.233,
+      "lng": 126.783,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Minahasa",
+      "province": "Sulawesi Utara",
+      "lat": 1.266,
+      "lng": 124.85,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Minahasa Selatan",
+      "province": "Sulawesi Utara",
+      "lat": 1.133,
+      "lng": 124.7,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Minahasa Tenggara",
+      "province": "Sulawesi Utara",
+      "lat": 1.25,
+      "lng": 124.966,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Minahasa Utara",
+      "province": "Sulawesi Utara",
+      "lat": 1.35,
+      "lng": 124.95,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Gorontalo",
+      "province": "Gorontalo",
+      "lat": 0.541,
+      "lng": 123.0595,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Boalemo",
+      "province": "Gorontalo",
+      "lat": 0.716,
+      "lng": 122.183,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bone Bolango",
+      "province": "Gorontalo",
+      "lat": 0.533,
+      "lng": 123.333,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Gorontalo Utara",
+      "province": "Gorontalo",
+      "lat": 1,
+      "lng": 122.85,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Pahuwato",
+      "province": "Gorontalo",
+      "lat": 0.733,
+      "lng": 121.483,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Palu",
+      "province": "Sulawesi Tengah",
+      "lat": -0.8917,
+      "lng": 119.8707,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Parigi Moutong",
+      "province": "Sulawesi Tengah",
+      "lat": -0.55,
+      "lng": 119.833,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Poso",
+      "province": "Sulawesi Tengah",
+      "lat": -1.4,
+      "lng": 120.75,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Donggala",
+      "province": "Sulawesi Tengah",
+      "lat": -0.683,
+      "lng": 119.733,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sigi",
+      "province": "Sulawesi Tengah",
+      "lat": -1.05,
+      "lng": 119.833,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Tojo Una-Una",
+      "province": "Sulawesi Tengah",
+      "lat": -1.233,
+      "lng": 121.583,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Banggai",
+      "province": "Sulawesi Tengah",
+      "lat": -1.666,
+      "lng": 122.433,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Banggai Kepulauan",
+      "province": "Sulawesi Tengah",
+      "lat": -1.7,
+      "lng": 123.466,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Banggai Laut",
+      "province": "Sulawesi Tengah",
+      "lat": -1.7,
+      "lng": 123.466,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Buol",
+      "province": "Sulawesi Tengah",
+      "lat": 1.05,
+      "lng": 121.466,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Morowali",
+      "province": "Sulawesi Tengah",
+      "lat": -2.533,
+      "lng": 121.4,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Morowali Utara",
+      "province": "Sulawesi Tengah",
+      "lat": -2.05,
+      "lng": 121.3,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Toli-Toli",
+      "province": "Sulawesi Tengah",
+      "lat": 1.016,
+      "lng": 120.7,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Makassar",
+      "province": "Sulawesi Selatan",
+      "lat": -5.1477,
+      "lng": 119.4327,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Parepare",
+      "province": "Sulawesi Selatan",
+      "lat": -4.0167,
+      "lng": 119.6333,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Palopo",
+      "province": "Sulawesi Selatan",
+      "lat": -2.9886,
+      "lng": 120.2,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bantaeng",
+      "province": "Sulawesi Selatan",
+      "lat": -5.466,
+      "lng": 119.95,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Barru",
+      "province": "Sulawesi Selatan",
+      "lat": -4.416,
+      "lng": 119.616,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bone",
+      "province": "Sulawesi Selatan",
+      "lat": -4.416,
+      "lng": 120.333,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bulukumba",
+      "province": "Sulawesi Selatan",
+      "lat": -5.533,
+      "lng": 120.266,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Enrekang",
+      "province": "Sulawesi Selatan",
+      "lat": -3.483,
+      "lng": 119.816,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Gowa",
+      "province": "Sulawesi Selatan",
+      "lat": -5.2,
+      "lng": 119.416,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Jeneponto",
+      "province": "Sulawesi Selatan",
+      "lat": -5.566,
+      "lng": 119.483,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kepulauan Selayar",
+      "province": "Sulawesi Selatan",
+      "lat": -6.35,
+      "lng": 120.466,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Luwu",
+      "province": "Sulawesi Selatan",
+      "lat": -2.533,
+      "lng": 120.2,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Luwu Timur",
+      "province": "Sulawesi Selatan",
+      "lat": -2.35,
+      "lng": 121,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Luwu Utara",
+      "province": "Sulawesi Selatan",
+      "lat": -2.766,
+      "lng": 120.6,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Maros",
+      "province": "Sulawesi Selatan",
+      "lat": -4.966,
+      "lng": 119.566,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Pangkajene dan Kepulauan",
+      "province": "Sulawesi Selatan",
+      "lat": -4.833,
+      "lng": 119.566,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Pinrang",
+      "province": "Sulawesi Selatan",
+      "lat": -3.583,
+      "lng": 119.116,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sidenreng Rappang",
+      "province": "Sulawesi Selatan",
+      "lat": -3.966,
+      "lng": 119.816,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Sinjai",
+      "province": "Sulawesi Selatan",
+      "lat": -5.2,
+      "lng": 120.1,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Soppeng",
+      "province": "Sulawesi Selatan",
+      "lat": -4.35,
+      "lng": 119.866,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Takalar",
+      "province": "Sulawesi Selatan",
+      "lat": -5.4,
+      "lng": 119.383,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Wajo",
+      "province": "Sulawesi Selatan",
+      "lat": -4.05,
+      "lng": 120.033,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Selayar",
+      "province": "Sulawesi Selatan",
+      "lat": -6.35,
+      "lng": 120.466,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Mamuju",
+      "province": "Sulawesi Barat",
+      "lat": -2.676,
+      "lng": 118.888,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Majene",
+      "province": "Sulawesi Barat",
+      "lat": -2.966,
+      "lng": 118.966,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Mamasa",
+      "province": "Sulawesi Barat",
+      "lat": -2.65,
+      "lng": 119,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Pasangkayu",
+      "province": "Sulawesi Barat",
+      "lat": -1.1,
+      "lng": 119.233,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Polewali Mandar",
+      "province": "Sulawesi Barat",
+      "lat": -3.433,
+      "lng": 119.05,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Central Mamuju",
+      "province": "Sulawesi Barat",
+      "lat": -2.566,
+      "lng": 119,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kendari",
+      "province": "Sulawesi Tenggara",
+      "lat": -3.9985,
+      "lng": 122.513,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bau-Bau",
+      "province": "Sulawesi Tenggara",
+      "lat": -5.466,
+      "lng": 122.633,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bombana",
+      "province": "Sulawesi Tenggara",
+      "lat": -4.516,
+      "lng": 121.966,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Buton",
+      "province": "Sulawesi Tenggara",
+      "lat": -5.05,
+      "lng": 122.966,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Buton Selatan",
+      "province": "Sulawesi Tenggara",
+      "lat": -5.483,
+      "lng": 122.583,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Buton Tengah",
+      "province": "Sulawesi Tenggara",
+      "lat": -5.233,
+      "lng": 122.733,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Buton Utara",
+      "province": "Sulawesi Tenggara",
+      "lat": -4.966,
+      "lng": 123.05,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kolaka",
+      "province": "Sulawesi Tenggara",
+      "lat": -3.666,
+      "lng": 121.616,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kolaka Timur",
+      "province": "Sulawesi Tenggara",
+      "lat": -3.916,
+      "lng": 121.833,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kolaka Utara",
+      "province": "Sulawesi Tenggara",
+      "lat": -3.3,
+      "lng": 121.516,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Konawe",
+      "province": "Sulawesi Tenggara",
+      "lat": -3.716,
+      "lng": 122.166,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Konawe Kepulauan",
+      "province": "Sulawesi Tenggara",
+      "lat": -4,
+      "lng": 123.166,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Konawe Selatan",
+      "province": "Sulawesi Tenggara",
+      "lat": -4.066,
+      "lng": 122.4,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Konawe Utara",
+      "province": "Sulawesi Tenggara",
+      "lat": -3.166,
+      "lng": 122,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Muna",
+      "province": "Sulawesi Tenggara",
+      "lat": -4.916,
+      "lng": 122.666,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Muna Barat",
+      "province": "Sulawesi Tenggara",
+      "lat": -4.833,
+      "lng": 122.516,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Wakatobi",
+      "province": "Sulawesi Tenggara",
+      "lat": -5.316,
+      "lng": 123.583,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Ambon",
+      "province": "Maluku",
+      "lat": -3.695,
+      "lng": 128.181,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Tual",
+      "province": "Maluku",
+      "lat": -5.666,
+      "lng": 132.733,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Maluku Barat Daya",
+      "province": "Maluku",
+      "lat": -8.166,
+      "lng": 126.833,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Maluku Tengah",
+      "province": "Maluku",
+      "lat": -3.483,
+      "lng": 128.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Maluku Tenggara",
+      "province": "Maluku",
+      "lat": -5.666,
+      "lng": 132.733,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Maluku Tenggara Barat",
+      "province": "Maluku",
+      "lat": -7,
+      "lng": 131,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Buru",
+      "province": "Maluku",
+      "lat": -3.416,
+      "lng": 126.833,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Buru Selatan",
+      "province": "Maluku",
+      "lat": -3.666,
+      "lng": 126.616,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Seram Bagian Barat",
+      "province": "Maluku",
+      "lat": -3.166,
+      "lng": 128,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Seram Bagian Timur",
+      "province": "Maluku",
+      "lat": -3.333,
+      "lng": 129.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Kepulauan Aru",
+      "province": "Maluku",
+      "lat": -6.233,
+      "lng": 134.666,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Sofifi",
+      "province": "Maluku Utara",
+      "lat": 0.733,
+      "lng": 127.566,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Ternate",
+      "province": "Maluku Utara",
+      "lat": 0.783,
+      "lng": 127.366,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Tidore Kepulauan",
+      "province": "Maluku Utara",
+      "lat": 0.683,
+      "lng": 127.4,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Halmahera Barat",
+      "province": "Maluku Utara",
+      "lat": 1.383,
+      "lng": 127.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Halmahera Selatan",
+      "province": "Maluku Utara",
+      "lat": -0.716,
+      "lng": 127.983,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Halmahera Tengah",
+      "province": "Maluku Utara",
+      "lat": 0.733,
+      "lng": 128.166,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Halmahera Timur",
+      "province": "Maluku Utara",
+      "lat": 0.516,
+      "lng": 129,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Halmahera Utara",
+      "province": "Maluku Utara",
+      "lat": 1.833,
+      "lng": 128,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Kepulauan Sula",
+      "province": "Maluku Utara",
+      "lat": -1.916,
+      "lng": 125.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Pulau Morotai",
+      "province": "Maluku Utara",
+      "lat": 2.3,
+      "lng": 128.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Pulau Taliabu",
+      "province": "Maluku Utara",
+      "lat": -1.966,
+      "lng": 124.833,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Manokwari",
+      "province": "Papua Barat",
+      "lat": -0.861,
+      "lng": 134.062,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Sorong",
+      "province": "Papua Barat",
+      "lat": -0.876,
+      "lng": 131.255,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Fakfak",
+      "province": "Papua Barat",
+      "lat": -2.55,
+      "lng": 132.3,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Kaimana",
+      "province": "Papua Barat",
+      "lat": -3.65,
+      "lng": 133.7,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Maybrat",
+      "province": "Papua Barat",
+      "lat": -1.333,
+      "lng": 133.233,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Raja Ampat",
+      "province": "Papua Barat",
+      "lat": -0.466,
+      "lng": 130.883,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Sorong Selatan",
+      "province": "Papua Barat",
+      "lat": -1.716,
+      "lng": 131.533,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Teluk Bintuni",
+      "province": "Papua Barat",
+      "lat": -2.05,
+      "lng": 133.533,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Teluk Wondama",
+      "province": "Papua Barat",
+      "lat": -2.516,
+      "lng": 134.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Pegunungan Arfak",
+      "province": "Papua Barat",
+      "lat": -1.05,
+      "lng": 133.866,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Jayapura",
+      "province": "Papua",
+      "lat": -2.533,
+      "lng": 140.717,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Biak Numfor",
+      "province": "Papua",
+      "lat": -1.016,
+      "lng": 136,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Jayawijaya",
+      "province": "Papua",
+      "lat": -3.966,
+      "lng": 138.95,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Keerom",
+      "province": "Papua",
+      "lat": -2.716,
+      "lng": 140.616,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Mamberamo Raya",
+      "province": "Papua",
+      "lat": -2,
+      "lng": 138,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Nabire",
+      "province": "Papua",
+      "lat": -3.366,
+      "lng": 135.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Pegunungan Bintang",
+      "province": "Papua",
+      "lat": -4.533,
+      "lng": 140.366,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Puncak",
+      "province": "Papua",
+      "lat": -4.166,
+      "lng": 137.333,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Puncak Jaya",
+      "province": "Papua",
+      "lat": -3.833,
+      "lng": 138.05,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Sarmi",
+      "province": "Papua",
+      "lat": -1.866,
+      "lng": 138.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Tolikara",
+      "province": "Papua",
+      "lat": -3.416,
+      "lng": 138.95,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Waropen",
+      "province": "Papua",
+      "lat": -2.05,
+      "lng": 136.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Yahukimo",
+      "province": "Papua",
+      "lat": -4.533,
+      "lng": 139.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Yalimo",
+      "province": "Papua",
+      "lat": -3.916,
+      "lng": 138.95,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Lanny Jaya",
+      "province": "Papua",
+      "lat": -3.966,
+      "lng": 138.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Mamberamo Tengah",
+      "province": "Papua",
+      "lat": -3.483,
+      "lng": 138.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Mappi",
+      "province": "Papua",
+      "lat": -6.5,
+      "lng": 138.95,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Asmat",
+      "province": "Papua",
+      "lat": -5.666,
+      "lng": 138.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Boven Digoel",
+      "province": "Papua",
+      "lat": -6,
+      "lng": 140.166,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Merauke",
+      "province": "Papua",
+      "lat": -8.466,
+      "lng": 140.3,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Deiyai",
+      "province": "Papua",
+      "lat": -4.566,
+      "lng": 136.833,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Dogiyai",
+      "province": "Papua",
+      "lat": -3.966,
+      "lng": 135.333,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Intan Jaya",
+      "province": "Papua",
+      "lat": -3.833,
+      "lng": 136.833,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Paniai",
+      "province": "Papua",
+      "lat": -3.966,
+      "lng": 136.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Supiori",
+      "province": "Papua",
+      "lat": -0.716,
+      "lng": 135.666,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Mimika",
+      "province": "Papua Tengah",
+      "lat": -4.533,
+      "lng": 136.5,
+      "tzIANA": "Asia/Jayapura"
+    },
+    {
+      "name": "Madiun (Kab.)",
+      "province": "Jawa Timur (sup)",
+      "lat": -7.629,
+      "lng": 111.523,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Kediri (Kab.)",
+      "province": "Jawa Timur (sup)",
+      "lat": -7.833,
+      "lng": 112.0167,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Malang (Kab.)",
+      "province": "Jawa Timur (sup)",
+      "lat": -7.9667,
+      "lng": 112.6333,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Surabaya (Kab.)",
+      "province": "Jawa Timur (sup)",
+      "lat": -7.2575,
+      "lng": 112.7521,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pasuruan (Kab.)",
+      "province": "Jawa Timur (sup)",
+      "lat": -7.645,
+      "lng": 112.907,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Probolinggo (Kab.)",
+      "province": "Jawa Timur (sup)",
+      "lat": -7.754,
+      "lng": 113.216,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Blitar (Kab.)",
+      "province": "Jawa Timur (sup)",
+      "lat": -8.099,
+      "lng": 112.171,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tegal (Kab.)",
+      "province": "Jawa Timur (sup)",
+      "lat": -6.869,
+      "lng": 109.14,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Magelang (Kab.)",
+      "province": "Jawa Timur (sup)",
+      "lat": -7.47,
+      "lng": 110.217,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Semarang (Kab.)",
+      "province": "Jawa Tengah (sup)",
+      "lat": -6.9667,
+      "lng": 110.4167,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Surakarta (Kab.)",
+      "province": "Jawa Tengah (sup)",
+      "lat": -7.5755,
+      "lng": 110.8244,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Pekalongan (Kab.)",
+      "province": "Jawa Tengah (sup)",
+      "lat": -6.888,
+      "lng": 109.669,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bandung (Kab.)",
+      "province": "Jawa Barat (sup)",
+      "lat": -6.9175,
+      "lng": 107.6191,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Sukabumi (Kab.)",
+      "province": "Jawa Barat (sup)",
+      "lat": -6.927,
+      "lng": 106.927,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Cirebon (Kab.)",
+      "province": "Jawa Barat (sup)",
+      "lat": -6.733,
+      "lng": 108.55,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Tasikmalaya (Kab.)",
+      "province": "Jawa Barat (sup)",
+      "lat": -7.327,
+      "lng": 108.22,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bogor (Kab.)",
+      "province": "Jawa Barat (sup)",
+      "lat": -6.595,
+      "lng": 106.8166,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Bekasi",
+      "province": "Jawa Barat (sup)",
+      "lat": -6.2383,
+      "lng": 106.9756,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Cilegon (Kab.)",
+      "province": "Jawa Barat (sup)",
+      "lat": -6.002,
+      "lng": 106.011,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Solok (Kab.)",
+      "province": "Sumatera Barat (sup)",
+      "lat": -0.8,
+      "lng": 100.666,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Padang (Kab.)",
+      "province": "Sumatera Barat (sup)",
+      "lat": -0.9492,
+      "lng": 100.3543,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Samarinda (Kab.)",
+      "province": "Kalimantan Timur (sup)",
+      "lat": -0.5022,
+      "lng": 117.1536,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Balikpapan (Kab.)",
+      "province": "Kalimantan Timur (sup)",
+      "lat": -1.2379,
+      "lng": 116.8529,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Bontang (Kab.)",
+      "province": "Kalimantan Timur (sup)",
+      "lat": 0.133,
+      "lng": 117.483,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Makassar (Kab.)",
+      "province": "Sulawesi Selatan (sup)",
+      "lat": -5.1477,
+      "lng": 119.4327,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Parepare (Kab.)",
+      "province": "Sulawesi Selatan (sup)",
+      "lat": -4.0167,
+      "lng": 119.6333,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Palopo (Kab.)",
+      "province": "Sulawesi Selatan (sup)",
+      "lat": -2.9886,
+      "lng": 120.2,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Kolaka (Kab.)",
+      "province": "Sulawesi Tenggara (sup)",
+      "lat": -3.666,
+      "lng": 121.616,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Konawe (Kab.)",
+      "province": "Sulawesi Tenggara (sup)",
+      "lat": -3.716,
+      "lng": 122.166,
+      "tzIANA": "Asia/Makassar"
+    },
+    {
+      "name": "Tangerang (Kab.)",
+      "province": "Banten (sup)",
+      "lat": -6.1783,
+      "lng": 106.6319,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Serang (Kab.)",
+      "province": "Banten (sup)",
+      "lat": -6.12,
+      "lng": 106.15,
+      "tzIANA": "Asia/Jakarta"
+    },
+    {
+      "name": "Gunungsitoli (Kab.)",
+      "province": "Sumatera Utara (sup2)",
+      "lat": 1.29,
+      "lng": 97.62,
+      "tzIANA": "Asia/Jakarta"
+    }
+  ]
+}

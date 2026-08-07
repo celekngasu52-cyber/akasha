@@ -1,0 +1,98 @@
+{
+  "id": "budi_19900510",
+  "description": "Synthetic persona for cross-engine scoring regression. Birth data and hand-computed chart summary are transcribed verbatim from src/synthesis/__tests__/scorer.test.ts (todo 11), where the Karier agreement score is hand-computed as 0 (BaZi +1 vs Vedic -1 cancel). This fixture MUST stay coherent with that test's fixed assertions.",
+  "capturedAt": "2026-08-07T18:00:00Z",
+  "source": "src/synthesis/__tests__/scorer.test.ts (todo 11 hand-computation)",
+  "birthData": {
+    "dateISO": "1990-05-10",
+    "timeISO": "12:00",
+    "lat": -6.2088,
+    "lng": 106.8456,
+    "tzIANA": "Asia/Jakarta",
+    "placeName": "Jakarta",
+    "gender": "male",
+    "isTimeEstimated": false
+  },
+  "expectedCharts": {
+    "bazi": {
+      "fourPillars": {
+        "year": "庚午",
+        "month": "辛巳",
+        "day": "乙亥",
+        "hour": "壬午"
+      },
+      "strength": {
+        "verdict": "weak",
+        "score": -2
+      },
+      "tenGods": {
+        "year": { "stem": "正官", "branches": ["食神", "偏财"] },
+        "month": { "stem": "七杀", "branches": ["伤官", "正官", "正财"] },
+        "day": { "stem": "日主", "branches": ["正印", "劫财"] },
+        "hour": { "stem": "正印", "branches": ["食神", "偏财"] }
+      }
+    },
+    "ziwei": {
+      "siHua": { "禄": "太阳", "权": "武曲", "科": "太阴", "忌": "天同" },
+      "palaces": {
+        "命宫": { "branch": "亥", "stars": ["天相"] },
+        "父母": { "branch": "子", "stars": ["天梁"] },
+        "福德": { "branch": "丑", "stars": ["廉贞", "七杀"] },
+        "交友": { "branch": "辰", "stars": ["天同"] },
+        "迁移": { "branch": "巳", "stars": ["武曲", "破军"] },
+        "疾厄": { "branch": "午", "stars": ["太阳"] },
+        "财帛": { "branch": "未", "stars": ["天府"] },
+        "子女": { "branch": "申", "stars": ["天机", "太阴"] },
+        "夫妻": { "branch": "酉", "stars": ["紫微", "贪狼"] },
+        "兄弟": { "branch": "戌", "stars": ["巨门"] }
+      }
+    },
+    "vedic": {
+      "lagnaDeg": 111.583,
+      "planetsInHouse": {
+        "sun": 10,
+        "moon": 4,
+        "mercury": 9,
+        "venus": 8,
+        "mars": 7,
+        "jupiter": 11,
+        "saturn": 6,
+        "rahu": 6,
+        "ketu": 12
+      }
+    },
+    "western": {
+      "ascendantDeg": 135.305,
+      "planetsInHouse": {
+        "sun": 10,
+        "moon": 4,
+        "mercury": 9,
+        "venus": 8,
+        "mars": 7,
+        "jupiter": 11,
+        "saturn": 6,
+        "uranus": 5,
+        "neptune": 5,
+        "pluto": 4
+      },
+      "karierAspects": [
+        { "pair": "sun-mars", "aspect": "sextile", "orb": 4.89 },
+        { "pair": "sun-neptune", "aspect": "trine", "orb": 4.86 },
+        { "pair": "moon-saturn", "aspect": "sextile", "orb": 1.72 },
+        { "pair": "saturn-midheaven", "aspect": "trine", "orb": 3.31 }
+      ]
+    }
+  },
+  "expectedScoring": {
+    "karier": {
+      "agreement": 0,
+      "label": "Rendah",
+      "votes": {
+        "BaZi": { "vote": 1, "weight": 1 },
+        "ZiWei": { "vote": 0, "weight": 0 },
+        "Vedic": { "vote": -1, "weight": 1 },
+        "Western": { "vote": 0, "weight": 1 }
+      }
+    }
+  }
+}

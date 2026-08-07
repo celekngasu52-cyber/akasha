@@ -1,0 +1,276 @@
+{
+  "header": {
+    "source": "insightapp.life/ziwei/chart",
+    "url": "https://insightapp.life/ziwei/chart",
+    "birthDateTime": "1991-02-14T12:00",
+    "gender": "male",
+    "lat": -6.2088,
+    "lng": 106.8456,
+    "tzIANA": "Asia/Jakarta",
+    "placeName": "Jakarta",
+    "note": "boundary case: imlek — day before Chinese New Year 1991 (1991-02-15); lunar year still 庚午",
+    "capturedAt": "2026-08-07T18:00:00Z"
+  },
+  "solarDate": "1991-02-14",
+  "lunarDate": "一九九〇年腊月三十",
+  "lunarMonth": 12,
+  "lunarDay": 30,
+  "yearGanZhi": "辛未",
+  "monthGanZhi": "庚寅",
+  "dayGanZhi": "乙卯",
+  "timeGanZhi": "壬午",
+  "timeBranchIndex": 6,
+  "isLateZi": false,
+  "mingGongBranchIndex": 7,
+  "shenGongBranchIndex": 7,
+  "palaces": [
+    {
+      "branchIndex": 0,
+      "branch": "子",
+      "ganZhi": "庚子",
+      "name": "交友",
+      "ageRange": "54-63",
+      "stars": [],
+      "isMingGong": false,
+      "isShenGong": false
+    },
+    {
+      "branchIndex": 1,
+      "branch": "丑",
+      "ganZhi": "辛丑",
+      "name": "迁移",
+      "ageRange": "64-73",
+      "stars": [],
+      "isMingGong": false,
+      "isShenGong": false
+    },
+    {
+      "branchIndex": 2,
+      "branch": "寅",
+      "ganZhi": "庚寅",
+      "name": "疾厄",
+      "ageRange": "74-83",
+      "stars": [
+        {
+          "name": "天钺",
+          "type": "aux"
+        }
+      ],
+      "isMingGong": false,
+      "isShenGong": false
+    },
+    {
+      "branchIndex": 3,
+      "branch": "卯",
+      "ganZhi": "辛卯",
+      "name": "财帛",
+      "ageRange": "84-93",
+      "stars": [
+        {
+          "name": "廉贞",
+          "type": "main"
+        },
+        {
+          "name": "破军",
+          "type": "main"
+        },
+        {
+          "name": "左辅",
+          "type": "aux"
+        },
+        {
+          "name": "火星",
+          "type": "aux"
+        }
+      ],
+      "isMingGong": false,
+      "isShenGong": false
+    },
+    {
+      "branchIndex": 4,
+      "branch": "辰",
+      "ganZhi": "壬辰",
+      "name": "子女",
+      "ageRange": "94-103",
+      "stars": [
+        {
+          "name": "文昌",
+          "type": "aux",
+          "siHua": "忌"
+        },
+        {
+          "name": "铃星",
+          "type": "aux"
+        }
+      ],
+      "isMingGong": false,
+      "isShenGong": false
+    },
+    {
+      "branchIndex": 5,
+      "branch": "巳",
+      "ganZhi": "癸巳",
+      "name": "夫妻",
+      "ageRange": "104-113",
+      "stars": [
+        {
+          "name": "天府",
+          "type": "main"
+        },
+        {
+          "name": "地空",
+          "type": "aux"
+        },
+        {
+          "name": "地劫",
+          "type": "aux"
+        }
+      ],
+      "isMingGong": false,
+      "isShenGong": false
+    },
+    {
+      "branchIndex": 6,
+      "branch": "午",
+      "ganZhi": "甲午",
+      "name": "兄弟",
+      "ageRange": "114-123",
+      "stars": [
+        {
+          "name": "天同",
+          "type": "main"
+        },
+        {
+          "name": "太阴",
+          "type": "main"
+        },
+        {
+          "name": "天魁",
+          "type": "aux"
+        }
+      ],
+      "isMingGong": false,
+      "isShenGong": false
+    },
+    {
+      "branchIndex": 7,
+      "branch": "未",
+      "ganZhi": "乙未",
+      "name": "命宫",
+      "ageRange": "4-13",
+      "stars": [
+        {
+          "name": "武曲",
+          "type": "main"
+        },
+        {
+          "name": "贪狼",
+          "type": "main"
+        }
+      ],
+      "isMingGong": true,
+      "isShenGong": true
+    },
+    {
+      "branchIndex": 8,
+      "branch": "申",
+      "ganZhi": "丙申",
+      "name": "父母",
+      "ageRange": "14-23",
+      "stars": [
+        {
+          "name": "太阳",
+          "type": "main",
+          "siHua": "权"
+        },
+        {
+          "name": "巨门",
+          "type": "main",
+          "siHua": "禄"
+        },
+        {
+          "name": "陀罗",
+          "type": "aux"
+        }
+      ],
+      "isMingGong": false,
+      "isShenGong": false
+    },
+    {
+      "branchIndex": 9,
+      "branch": "酉",
+      "ganZhi": "丁酉",
+      "name": "福德",
+      "ageRange": "24-33",
+      "stars": [
+        {
+          "name": "天相",
+          "type": "main"
+        },
+        {
+          "name": "禄存",
+          "type": "aux"
+        }
+      ],
+      "isMingGong": false,
+      "isShenGong": false
+    },
+    {
+      "branchIndex": 10,
+      "branch": "戌",
+      "ganZhi": "戊戌",
+      "name": "田宅",
+      "ageRange": "34-43",
+      "stars": [
+        {
+          "name": "天机",
+          "type": "main"
+        },
+        {
+          "name": "天梁",
+          "type": "main"
+        },
+        {
+          "name": "文曲",
+          "type": "aux",
+          "siHua": "科"
+        },
+        {
+          "name": "擎羊",
+          "type": "aux"
+        }
+      ],
+      "isMingGong": false,
+      "isShenGong": false
+    },
+    {
+      "branchIndex": 11,
+      "branch": "亥",
+      "ganZhi": "己亥",
+      "name": "事业",
+      "ageRange": "44-53",
+      "stars": [
+        {
+          "name": "紫微",
+          "type": "main"
+        },
+        {
+          "name": "七杀",
+          "type": "main"
+        },
+        {
+          "name": "右弼",
+          "type": "aux"
+        }
+      ],
+      "isMingGong": false,
+      "isShenGong": false
+    }
+  ],
+  "siHua": {
+    "禄": "巨门",
+    "权": "太阳",
+    "科": "文曲",
+    "忌": "文昌"
+  }
+}

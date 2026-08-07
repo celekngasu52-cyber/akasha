@@ -1,0 +1,448 @@
+{
+  "header": {
+    "source": "swisseph engine self-snapshot",
+    "url": "https://www.astro.com/cgi/ade.cgi",
+    "capturedAt": "2026-08-07T18:00:00Z",
+    "config": {
+      "zodiac": "tropical",
+      "houseSystem": "placidus (whole-sign fallback at |lat|>66)"
+    },
+    "birthData": {
+      "birthDateTime": "1990-05-10T12:00",
+      "gender": "male",
+      "lat": 69.6493,
+      "lng": 18.9553,
+      "tzIANA": "Europe/Oslo",
+      "placeName": "Tromsø"
+    },
+    "note": "boundary case: |lat|>66° circumpolar — Placidus undefined, engine falls back to whole-sign houses"
+  },
+  "jdUT": 2448021.916666659,
+  "zodiac": "tropical",
+  "houseSystem": "WS",
+  "polarFallback": true,
+  "angles": {
+    "ascendant": {
+      "name": "ascendant",
+      "longitudeDeg": 153.775711,
+      "signIndex": 5,
+      "degreeInSign": 3.775711,
+      "retrograde": false
+    },
+    "midheaven": {
+      "name": "midheaven",
+      "longitudeDeg": 39.296806,
+      "signIndex": 1,
+      "degreeInSign": 9.296806,
+      "retrograde": false
+    }
+  },
+  "houses": [
+    {
+      "index": 1,
+      "longitudeDeg": 150,
+      "signIndex": 5
+    },
+    {
+      "index": 2,
+      "longitudeDeg": 180,
+      "signIndex": 6
+    },
+    {
+      "index": 3,
+      "longitudeDeg": 210,
+      "signIndex": 7
+    },
+    {
+      "index": 4,
+      "longitudeDeg": 240,
+      "signIndex": 8
+    },
+    {
+      "index": 5,
+      "longitudeDeg": 270,
+      "signIndex": 9
+    },
+    {
+      "index": 6,
+      "longitudeDeg": 300,
+      "signIndex": 10
+    },
+    {
+      "index": 7,
+      "longitudeDeg": 330,
+      "signIndex": 11
+    },
+    {
+      "index": 8,
+      "longitudeDeg": 0,
+      "signIndex": 0
+    },
+    {
+      "index": 9,
+      "longitudeDeg": 30,
+      "signIndex": 1
+    },
+    {
+      "index": 10,
+      "longitudeDeg": 60,
+      "signIndex": 2
+    },
+    {
+      "index": 11,
+      "longitudeDeg": 90,
+      "signIndex": 3
+    },
+    {
+      "index": 12,
+      "longitudeDeg": 120,
+      "signIndex": 4
+    }
+  ],
+  "planets": [
+    {
+      "name": "sun",
+      "longitudeDeg": 49.489865,
+      "signIndex": 1,
+      "degreeInSign": 19.489865,
+      "retrograde": false
+    },
+    {
+      "name": "moon",
+      "longitudeDeg": 236.074604,
+      "signIndex": 7,
+      "degreeInSign": 26.074604,
+      "retrograde": false
+    },
+    {
+      "name": "mercury",
+      "longitudeDeg": 39.536501,
+      "signIndex": 1,
+      "degreeInSign": 9.536501,
+      "retrograde": true
+    },
+    {
+      "name": "venus",
+      "longitudeDeg": 7.042056,
+      "signIndex": 0,
+      "degreeInSign": 7.042056,
+      "retrograde": false
+    },
+    {
+      "name": "mars",
+      "longitudeDeg": 344.553859,
+      "signIndex": 11,
+      "degreeInSign": 14.553859,
+      "retrograde": false
+    },
+    {
+      "name": "jupiter",
+      "longitudeDeg": 98.59666,
+      "signIndex": 3,
+      "degreeInSign": 8.59666,
+      "retrograde": false
+    },
+    {
+      "name": "saturn",
+      "longitudeDeg": 295.314761,
+      "signIndex": 9,
+      "degreeInSign": 25.314761,
+      "retrograde": true
+    },
+    {
+      "name": "uranus",
+      "longitudeDeg": 279.300095,
+      "signIndex": 9,
+      "degreeInSign": 9.300095,
+      "retrograde": true
+    },
+    {
+      "name": "neptune",
+      "longitudeDeg": 284.421843,
+      "signIndex": 9,
+      "degreeInSign": 14.421843,
+      "retrograde": true
+    },
+    {
+      "name": "pluto",
+      "longitudeDeg": 226.30917,
+      "signIndex": 7,
+      "degreeInSign": 16.30917,
+      "retrograde": true
+    }
+  ],
+  "aspects": [
+    {
+      "bodyA": "sun",
+      "bodyB": "moon",
+      "type": "opposition",
+      "exactAngle": 180,
+      "actualSeparation": 173.415261,
+      "orb": 6.584739
+    },
+    {
+      "bodyA": "sun",
+      "bodyB": "mars",
+      "type": "sextile",
+      "exactAngle": 60,
+      "actualSeparation": 64.936006,
+      "orb": 4.936006
+    },
+    {
+      "bodyA": "sun",
+      "bodyB": "saturn",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 114.175104,
+      "orb": 5.824896
+    },
+    {
+      "bodyA": "sun",
+      "bodyB": "neptune",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 125.068022,
+      "orb": 5.068022
+    },
+    {
+      "bodyA": "sun",
+      "bodyB": "pluto",
+      "type": "opposition",
+      "exactAngle": 180,
+      "actualSeparation": 176.819305,
+      "orb": 3.180695
+    },
+    {
+      "bodyA": "moon",
+      "bodyB": "saturn",
+      "type": "sextile",
+      "exactAngle": 60,
+      "actualSeparation": 59.240157,
+      "orb": 0.759843
+    },
+    {
+      "bodyA": "moon",
+      "bodyB": "ascendant",
+      "type": "square",
+      "exactAngle": 90,
+      "actualSeparation": 82.298893,
+      "orb": 7.701107
+    },
+    {
+      "bodyA": "mercury",
+      "bodyB": "mars",
+      "type": "sextile",
+      "exactAngle": 60,
+      "actualSeparation": 54.982642,
+      "orb": 5.017358
+    },
+    {
+      "bodyA": "mercury",
+      "bodyB": "jupiter",
+      "type": "sextile",
+      "exactAngle": 60,
+      "actualSeparation": 59.060159,
+      "orb": 0.939841
+    },
+    {
+      "bodyA": "mercury",
+      "bodyB": "uranus",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 120.236406,
+      "orb": 0.236406
+    },
+    {
+      "bodyA": "mercury",
+      "bodyB": "neptune",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 115.114658,
+      "orb": 4.885342
+    },
+    {
+      "bodyA": "mercury",
+      "bodyB": "pluto",
+      "type": "opposition",
+      "exactAngle": 180,
+      "actualSeparation": 173.227331,
+      "orb": 6.772669
+    },
+    {
+      "bodyA": "mercury",
+      "bodyB": "ascendant",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 114.23921,
+      "orb": 5.76079
+    },
+    {
+      "bodyA": "mercury",
+      "bodyB": "midheaven",
+      "type": "conjunction",
+      "exactAngle": 0,
+      "actualSeparation": 0.239695,
+      "orb": 0.239695
+    },
+    {
+      "bodyA": "venus",
+      "bodyB": "jupiter",
+      "type": "square",
+      "exactAngle": 90,
+      "actualSeparation": 91.554604,
+      "orb": 1.554604
+    },
+    {
+      "bodyA": "venus",
+      "bodyB": "uranus",
+      "type": "square",
+      "exactAngle": 90,
+      "actualSeparation": 87.741961,
+      "orb": 2.258039
+    },
+    {
+      "bodyA": "venus",
+      "bodyB": "neptune",
+      "type": "square",
+      "exactAngle": 90,
+      "actualSeparation": 82.620213,
+      "orb": 7.379787
+    },
+    {
+      "bodyA": "mars",
+      "bodyB": "jupiter",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 114.042801,
+      "orb": 5.957199
+    },
+    {
+      "bodyA": "mars",
+      "bodyB": "uranus",
+      "type": "sextile",
+      "exactAngle": 60,
+      "actualSeparation": 65.253764,
+      "orb": 5.253764
+    },
+    {
+      "bodyA": "mars",
+      "bodyB": "neptune",
+      "type": "sextile",
+      "exactAngle": 60,
+      "actualSeparation": 60.132016,
+      "orb": 0.132016
+    },
+    {
+      "bodyA": "mars",
+      "bodyB": "pluto",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 118.244689,
+      "orb": 1.755311
+    },
+    {
+      "bodyA": "mars",
+      "bodyB": "midheaven",
+      "type": "sextile",
+      "exactAngle": 60,
+      "actualSeparation": 54.742947,
+      "orb": 5.257053
+    },
+    {
+      "bodyA": "jupiter",
+      "bodyB": "uranus",
+      "type": "opposition",
+      "exactAngle": 180,
+      "actualSeparation": 179.296565,
+      "orb": 0.703435
+    },
+    {
+      "bodyA": "jupiter",
+      "bodyB": "neptune",
+      "type": "opposition",
+      "exactAngle": 180,
+      "actualSeparation": 174.174817,
+      "orb": 5.825183
+    },
+    {
+      "bodyA": "jupiter",
+      "bodyB": "pluto",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 127.71251,
+      "orb": 7.71251
+    },
+    {
+      "bodyA": "jupiter",
+      "bodyB": "ascendant",
+      "type": "sextile",
+      "exactAngle": 60,
+      "actualSeparation": 55.179051,
+      "orb": 4.820949
+    },
+    {
+      "bodyA": "jupiter",
+      "bodyB": "midheaven",
+      "type": "sextile",
+      "exactAngle": 60,
+      "actualSeparation": 59.299854,
+      "orb": 0.700146
+    },
+    {
+      "bodyA": "uranus",
+      "bodyB": "neptune",
+      "type": "conjunction",
+      "exactAngle": 0,
+      "actualSeparation": 5.121748,
+      "orb": 5.121748
+    },
+    {
+      "bodyA": "uranus",
+      "bodyB": "ascendant",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 125.524384,
+      "orb": 5.524384
+    },
+    {
+      "bodyA": "uranus",
+      "bodyB": "midheaven",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 119.996711,
+      "orb": 0.003289
+    },
+    {
+      "bodyA": "neptune",
+      "bodyB": "pluto",
+      "type": "sextile",
+      "exactAngle": 60,
+      "actualSeparation": 58.112673,
+      "orb": 1.887327
+    },
+    {
+      "bodyA": "neptune",
+      "bodyB": "midheaven",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 114.874963,
+      "orb": 5.125037
+    },
+    {
+      "bodyA": "pluto",
+      "bodyB": "midheaven",
+      "type": "opposition",
+      "exactAngle": 180,
+      "actualSeparation": 172.987636,
+      "orb": 7.012364
+    },
+    {
+      "bodyA": "ascendant",
+      "bodyB": "midheaven",
+      "type": "trine",
+      "exactAngle": 120,
+      "actualSeparation": 114.478905,
+      "orb": 5.521095
+    }
+  ]
+}

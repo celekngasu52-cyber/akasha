@@ -1,0 +1,39 @@
+{
+  "header": {
+    "source": "throosden.github.io/bazi",
+    "url": "https://throosden.github.io/bazi/",
+    "birthDateTime": "1991-02-14T12:00",
+    "gender": "male",
+    "lat": -6.2088,
+    "lng": 106.8456,
+    "tzIANA": "Asia/Jakarta",
+    "placeName": "Jakarta",
+    "note": "boundary case: imlek — day before Chinese New Year 1991 (1991-02-15); solar-to-lunar year boundary",
+    "capturedAt": "2026-08-07T18:00:00Z"
+  },
+  "solarDate": "1991-02-14",
+  "lunarDate": "一九九〇年腊月三十",
+  "fourPillars": {
+    "year": {
+      "ganZhi": "辛未",
+      "stem": "辛",
+      "branch": "未"
+    },
+    "month": {
+      "ganZhi": "庚寅",
+      "stem": "庚",
+      "branch": "寅"
+    },
+    "day": {
+      "ganZhi": "乙卯",
+      "stem": "乙",
+      "branch": "卯"
+    },
+    "hour": {
+      "ganZhi": "壬午",
+      "stem": "壬",
+      "branch": "午"
+    }
+  },
+  "isLateZi": false
+}

@@ -1,0 +1,39 @@
+{
+  "header": {
+    "source": "throosden.github.io/bazi",
+    "url": "https://throosden.github.io/bazi/",
+    "birthDateTime": "1990-05-10T23:00",
+    "gender": "male",
+    "lat": -6.2088,
+    "lng": 106.8456,
+    "tzIANA": "Asia/Jakarta",
+    "placeName": "Jakarta",
+    "note": "boundary case: 23:00 late-zi hour (晚子时) — day-boundary in BaZi",
+    "capturedAt": "2026-08-07T18:00:00Z"
+  },
+  "solarDate": "1990-05-10",
+  "lunarDate": "一九九〇年四月十六",
+  "fourPillars": {
+    "year": {
+      "ganZhi": "庚午",
+      "stem": "庚",
+      "branch": "午"
+    },
+    "month": {
+      "ganZhi": "辛巳",
+      "stem": "辛",
+      "branch": "巳"
+    },
+    "day": {
+      "ganZhi": "乙亥",
+      "stem": "乙",
+      "branch": "亥"
+    },
+    "hour": {
+      "ganZhi": "戊子",
+      "stem": "戊",
+      "branch": "子"
+    }
+  },
+  "isLateZi": true
+}

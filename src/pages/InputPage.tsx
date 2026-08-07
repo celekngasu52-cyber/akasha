@@ -33,6 +33,7 @@ export function InputPage({ onSubmit }: InputPageProps): ReactNode {
   const [query, setQuery] = useState('')
   const [selectedCity, setSelectedCity] = useState<CityEntry | null>(null)
   const [errors, setErrors] = useState<Record<string, string>>({})
+  const [gender, setGender] = useState<'male' | 'female' | ''>('')
 
   // Combobox state
   const [isOpen, setIsOpen] = useState(false)
@@ -149,10 +150,11 @@ export function InputPage({ onSubmit }: InputPageProps): ReactNode {
         tzIANA: selectedCity.tzIANA,
         placeName: selectedCity.name,
         isTimeEstimated,
+        ...(gender ? { gender } : {}),
       }
       onSubmit(birthData)
     },
-    [dateISO, timeISO, isTimeEstimated, selectedCity, onSubmit],
+    [dateISO, timeISO, isTimeEstimated, selectedCity, gender, onSubmit],
   )
 
   const inputClass = [
@@ -306,6 +308,34 @@ export function InputPage({ onSubmit }: InputPageProps): ReactNode {
               {getCities().length} kota/kabupaten Indonesia. Gunakan panah ↑↓ untuk navigasi.
             </p>
           )}
+        </div>
+
+        {/* Jenis kelamin (opsional, untuk pembacaan gender-dependent) */}
+        <div className="mb-4">
+          <span className={labelClass}>Jenis Kelamin (opsional)</span>
+          <div className="mt-1 flex flex-wrap gap-3">
+            {(
+              [
+                ['male', 'Pria'],
+                ['female', 'Perempuan'],
+              ] as const
+            ).map(([value, label]) => (
+              <label
+                key={value}
+                className="flex cursor-pointer items-center gap-2 text-sm font-body text-fg"
+              >
+                <input
+                  type="radio"
+                  name="gender"
+                  value={value}
+                  checked={gender === value}
+                  onChange={() => setGender(value)}
+                  className="h-4 w-4 accent-accent"
+                />
+                {label}
+              </label>
+            ))}
+          </div>
         </div>
 
         {/* Submit */}

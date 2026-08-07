@@ -21,7 +21,7 @@ import {
 import {
   buildDashboardData,
   buildDailyForecast,
-} from './dashboard-mock'
+} from './dashboard-data'
 
 const STORAGE_KEY = 'akasha:latest-profile'
 
@@ -62,8 +62,8 @@ export function Report({ birthData, onBack }: ReportProps): React.ReactNode {
   const pillars = computeFourPillars(birthData)
   const strength = computeStrength(pillars)
   const tenGods = computeTenGods(birthData)
-  const horizons = buildDashboardData()
-  const daily = buildDailyForecast()
+  const horizons = buildDashboardData(birthData)
+  const daily = buildDailyForecast(birthData)
 
   // Persist the profile once per report view (client-only; SSR-safe).
   useEffect(() => {
@@ -124,7 +124,7 @@ export function Report({ birthData, onBack }: ReportProps): React.ReactNode {
           className="font-display mb-3 text-xl"
           style={{ color: 'var(--aka-fg)' }}
         >
-          Peta BaZi — Perhitungan Nyata
+          Peta BaZi · Perhitungan Nyata
         </h2>
         <Card className="print-avoid-break flex flex-col gap-3">
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
@@ -181,7 +181,7 @@ export function Report({ birthData, onBack }: ReportProps): React.ReactNode {
           className="font-display mb-3 text-xl"
           style={{ color: 'var(--aka-fg)' }}
         >
-          Ramalan Harian — 7 Hari
+          Ramalan Harian · 7 Hari
         </h2>
         <div className="flex flex-col gap-3">
           {daily.map((day) => (
@@ -251,7 +251,7 @@ export function Report({ birthData, onBack }: ReportProps): React.ReactNode {
         </h2>
         <Card className="print-avoid-break flex flex-col gap-3">
           <p className="font-body text-sm">
-            Akasha memadukan empat tradisi astrologi independen — BaZi (China),
+            Akasha memadukan empat tradisi astrologi independen: BaZi (China),
             Zi Wei Dou Shu (China), Vedic (India), dan Western (Barat). Setiap
             sistem dihitung terpisah dari data kelahiran Anda, lalu disintesis
             menjadi skor persetujuan di empat ranah: Karier, Cinta, Kesehatan,

@@ -19,6 +19,8 @@ export interface BirthData {
   isTimeEstimated: boolean
   /** True iff the IANA tz lacked data for the date and a fallback was used. */
   tzApproximated?: boolean
+  /** Optional sex: 'male' or 'female', used by gender-dependent engine reads. */
+  gender?: 'male' | 'female'
 }
 
 /** Result of LMT offset computation, expressed several ways. */

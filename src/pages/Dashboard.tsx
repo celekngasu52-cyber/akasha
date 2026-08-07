@@ -6,8 +6,8 @@
 // with score 0-100 + agreement badge + tlDr + 30-day TrendChart + collapsible
 // WhyPanel (4 engine votes).
 //
-// Data is currently mock (see dashboard-mock.ts) until todo 17/19 wire the real
-// Chart4 -> scorer -> narrative pipeline. The swap is a single import change.
+// Data comes from the real (synchronous) BaZi pipeline in dashboard-data.ts.
+// The full async Chart4 (swisseph Wasm) scorer is a separate iteration.
 //
 // Routing: no react-router (not a dep, cannot add deps). The dashboard is
 // rendered by App.tsx via a useState route switch. Tabs within the dashboard
@@ -26,10 +26,10 @@ import {
   buildDashboardData,
   buildDailyForecast,
   DASHBOARD_DOMAINS,
-} from './dashboard-mock'
+} from './dashboard-data'
 
 export interface DashboardProps {
-  /** Birth data from InputPage (currently unused by mock — wired for todo 17). */
+  /** Birth data driving the real BaZi dashboard pipeline. */
   birthData: BirthData
   /** Return to the input page. */
   onReset: () => void
@@ -72,9 +72,9 @@ export function Dashboard({
   const [tab, setTab] = useState<string>('harian')
   const [saved, setSaved] = useState(false)
   const { isDark, toggle } = useDarkMode()
-  const data = useMemo(() => buildDashboardData(), [])
+  const data = useMemo(() => buildDashboardData(birthData), [birthData])
   // Captures "today" at first render; rolls forward on reload.
-  const daily = useMemo(() => buildDailyForecast(), [])
+  const daily = useMemo(() => buildDailyForecast(birthData), [birthData])
   const active = data.find((d) => d.horizon === tab) ?? data[0]!
 
   return (
@@ -180,7 +180,7 @@ export function Dashboard({
               className="font-mono text-xs uppercase tracking-widest"
               style={{ color: 'var(--aka-accent)' }}
             >
-              tlDr — {active.horizon}{' '}
+              tlDr {active.horizon}{' '}
               <GlossaryPopover term="agreement score" label="?" />
             </p>
             <p
@@ -201,7 +201,7 @@ export function Dashboard({
                   domain={domainName}
                   score={entry.score.agreement}
                   label={entry.score.label}
-                  tlDr={`Skor ${entry.score.agreement}/100 — ${entry.score.label}.`}
+                  tlDr={`Skor ${entry.score.agreement}/100 (${entry.score.label}).`}
                   trend={entry.trend}
                   votes={entry.score.details.map((d) => ({
                     engine: d.engine,

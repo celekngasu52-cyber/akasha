@@ -8,7 +8,7 @@
 
 import type { BirthData } from '../core/birth'
 import { computeFourPillars } from '../engines/bazi'
-import type { ElementScores, ForecastHorizon } from '../engines/bazi/types'
+import type { ElementScores } from '../engines/bazi/types'
 import type { DashboardDomain } from './dashboard-data'
 
 const ELEMENTS = ['wood', 'fire', 'earth', 'metal', 'water'] as const

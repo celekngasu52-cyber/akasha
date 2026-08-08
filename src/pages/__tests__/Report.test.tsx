@@ -50,8 +50,12 @@ describe('Report — Laporan Lengkap', () => {
   it('renders the real BaZi four pillars (gan-zhi strings)', () => {
     const pillars = computeFourPillars(STUB_BIRTH)
     const html = renderReport()
+    // NatalChart renders stem and branch as two adjacent styled <span>s,
+    // so the contiguous ganZhi string is split in the markup. Assert the
+    // stem and branch characters individually — same semantic contract.
     for (const p of [pillars.year, pillars.month, pillars.day, pillars.hour]) {
-      expect(html).toContain(p.ganZhi)
+      expect(html).toContain(p.stem)
+      expect(html).toContain(p.branch)
     }
     expect(html).toContain('Kekuatan Hari Utama')
   })

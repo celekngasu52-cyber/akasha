@@ -13,10 +13,13 @@
 import { useEffect } from 'react'
 import type { BirthData } from '../core/birth'
 import { Card, Badge, Button } from '../components/ui'
+import { NatalChart } from '../components/NatalChart'
+import { LuckCycle } from '../components/LuckCycle'
 import {
   computeFourPillars,
   computeStrength,
   computeTenGods,
+  computeLuckPillars,
 } from '../engines/bazi'
 import {
   buildDashboardData,
@@ -30,12 +33,6 @@ const HORIZON_LABELS: Readonly<Record<string, string>> = Object.freeze({
   mingguan: 'Mingguan',
   bulanan: 'Bulanan',
   tahunan: 'Tahunan',
-})
-
-const VERDICT_LABELS: Readonly<Record<string, string>> = Object.freeze({
-  strong: 'Kuat',
-  balanced: 'Seimbang',
-  weak: 'Lemah',
 })
 
 export interface ReportProps {
@@ -62,6 +59,11 @@ export function Report({ birthData, onBack }: ReportProps): React.ReactNode {
   const pillars = computeFourPillars(birthData)
   const strength = computeStrength(pillars)
   const tenGods = computeTenGods(birthData)
+  const gender = birthData.gender === 'female' ? 0 : 1
+  const luck = computeLuckPillars(birthData, gender)
+  // Approximate current age for highlighting the active 大運 decade.
+  const birthYear = Number(birthData.dateISO.slice(0, 4))
+  const currentAge = new Date().getFullYear() - birthYear
   const horizons = buildDashboardData(birthData)
   const daily = buildDailyForecast(birthData)
 
@@ -127,51 +129,24 @@ export function Report({ birthData, onBack }: ReportProps): React.ReactNode {
           Peta BaZi · Perhitungan Nyata
         </h2>
         <Card className="print-avoid-break flex flex-col gap-3">
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-            {[
-              { label: 'Tahun', pillar: pillars.year },
-              { label: 'Bulan', pillar: pillars.month },
-              { label: 'Hari', pillar: pillars.day },
-              { label: 'Jam', pillar: pillars.hour },
-            ].map((p) => (
-              <div key={p.label} className="flex flex-col items-center gap-1">
-                <span className="font-mono text-xs" style={{ color: 'var(--aka-muted)' }}>
-                  {p.label}
-                </span>
-                <span className="font-display text-2xl">{p.pillar.ganZhi}</span>
-                <span className="font-mono text-xs" style={{ color: 'var(--aka-muted)' }}>
-                  {p.pillar.stem} · {p.pillar.branch}
-                </span>
-              </div>
-            ))}
-          </div>
-          <p className="font-body text-sm" style={{ color: 'var(--aka-fg)' }}>
-            Kekuatan Hari Utama: {VERDICT_LABELS[strength.verdict] ?? strength.verdict}{' '}
-            (skor {strength.score > 0 ? `+${strength.score}` : strength.score}).
-          </p>
-          <div className="border-t-2 border-border pt-2">
-            <span
-              className="font-mono text-xs uppercase tracking-widest"
-              style={{ color: 'var(--aka-accent)' }}
-            >
-              Sepuluh Dewa (十神)
-            </span>
-            <div className="mt-2 grid grid-cols-1 gap-1 md:grid-cols-2">
-              {[
-                { label: 'Tahun', tg: tenGods.year },
-                { label: 'Bulan', tg: tenGods.month },
-                { label: 'Hari', tg: tenGods.day },
-                { label: 'Jam', tg: tenGods.hour },
-              ].map((t) => (
-                <p key={t.label} className="font-body text-sm">
-                  <span className="font-mono" style={{ color: 'var(--aka-muted)' }}>
-                    {t.label}:
-                  </span>{' '}
-                  {t.tg.stem} · {t.tg.branches.join(', ')}
-                </p>
-              ))}
-            </div>
-          </div>
+          <NatalChart
+            pillars={pillars}
+            tenGods={tenGods}
+            strength={strength}
+          />
+        </Card>
+      </section>
+
+      {/* 大運 decade luck-pillar cycle */}
+      <section className="print-avoid-break mb-8">
+        <h2
+          className="font-display mb-3 text-xl"
+          style={{ color: 'var(--aka-fg)' }}
+        >
+          Siklus Keberuntungan (大運)
+        </h2>
+        <Card className="print-avoid-break">
+          <LuckCycle luck={luck} currentAge={currentAge} />
         </Card>
       </section>
 

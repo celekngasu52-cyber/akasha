@@ -20,8 +20,14 @@ import type { BirthData } from '../core/birth'
 import { Section, Tabs, Button, Card, Badge } from '../components/ui'
 import { DomainCard } from '../components/DomainCard'
 import { GlossaryPopover } from '../components/GlossaryPopover'
+import { NatalChart } from '../components/NatalChart'
 import { useDarkMode } from '../hooks/useDarkMode'
 import { saveProfile } from '../lib/profileStore'
+import {
+  computeFourPillars,
+  computeStrength,
+  computeTenGods,
+} from '../engines/bazi'
 import {
   buildDashboardData,
   buildDailyForecast,
@@ -75,10 +81,25 @@ export function Dashboard({
   const data = useMemo(() => buildDashboardData(birthData), [birthData])
   // Captures "today" at first render; rolls forward on reload.
   const daily = useMemo(() => buildDailyForecast(birthData), [birthData])
+  // Real BaZi natal: four pillars, ten gods, day-master strength.
+  const natal = useMemo(() => {
+    const pillars = computeFourPillars(birthData)
+    const strength = computeStrength(pillars)
+    const tenGods = computeTenGods(birthData)
+    return { pillars, strength, tenGods }
+  }, [birthData])
   const active = data.find((d) => d.horizon === tab) ?? data[0]!
 
   return (
-    <Section eyebrow="Ringkasan" title="Dashboard Astrologi">
+    <>
+      <Section eyebrow="BaZi" title="Peta Kelahiran">
+        <NatalChart
+          pillars={natal.pillars}
+          tenGods={natal.tenGods}
+          strength={natal.strength}
+        />
+      </Section>
+      <Section eyebrow="Ringkasan" title="Dashboard Astrologi">
       <div className="mb-4 flex items-center justify-between gap-3">
         <Tabs
           items={TAB_ITEMS as unknown as { id: string; label: string }[]}
@@ -215,6 +236,7 @@ export function Dashboard({
           </div>
         </>
       )}
-    </Section>
+      </Section>
+    </>
   )
 }

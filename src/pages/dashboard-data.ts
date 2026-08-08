@@ -19,19 +19,34 @@
 //
 // Domain → element affinity (a fixed design choice, documented):
 //   Karier -> fire, Cinta -> water, Kesehatan -> wood, Keuangan -> earth.
+//
+// Five-element math lives in ./dashboard-elements.ts and Indonesian date
+// helpers in ./dashboard-dates.ts (mechanical split — todo 1 F2 debt).
 
 import type { BirthData } from '../core/birth'
 import {
   computeDailyForecast,
-  computeFourPillars,
   computeMonthlyForecast,
   computeWeeklyForecast,
   computeYearlyForecast,
 } from '../engines/bazi'
-import type { ElementScores, ForecastHorizon } from '../engines/bazi/types'
+import type { ForecastHorizon } from '../engines/bazi/types'
 import { buildTlDr } from '../synthesis/narrative'
 import type { Horizon } from '../synthesis/narrative'
 import type { DomainScore, EngineDetail } from '../synthesis/scorer'
+import {
+  natalTally,
+  genderOf,
+  scoreFor,
+  tallyOf,
+  type Tally,
+} from './dashboard-elements'
+import {
+  isoOfDate,
+  addDaysISO,
+  formatDateLabel,
+  relativeLabelFor,
+} from './dashboard-dates'
 
 /** Domains shown on the dashboard, in display order. */
 export const DASHBOARD_DOMAINS = [
@@ -77,87 +92,6 @@ export interface DailyEntry {
 /** Number of days shown in the daily forecast list. */
 export const DAILY_HORIZON_DAYS = 7
 
-/* ---- five-element helpers ---- */
-
-const ELEMENTS = ['wood', 'fire', 'earth', 'metal', 'water'] as const
-type Element = (typeof ELEMENTS)[number]
-
-/** Domain → the element whose live share drives that domain's swing. */
-const DOMAIN_ELEMENT: Readonly<Record<DashboardDomain, Element>> = {
-  Karier: 'fire',
-  Cinta: 'water',
-  Kesehatan: 'wood',
-  Keuangan: 'earth',
-}
-
-/** Five-element tally type. */
-type Tally = Record<Element, number>
-
-/** Sum of a five-element tally. */
-function sumScores(s: Tally): number {
-  return ELEMENTS.reduce((acc, e) => acc + Math.max(0, s[e]), 0)
-}
-
-/** Element share (fraction 0..1). */
-function elShare(s: Tally, el: Element): number {
-  const tot = sumScores(s)
-  return tot === 0 ? 0.2 : Math.max(0, s[el]) / tot
-}
-
-/** Map a 0..1 share to a 0..100 score so a typical share (≈0.2) lands mid. */
-function shareToScore(share: number): number {
-  return Math.max(0, Math.min(100, Math.round(40 + share * 65)))
-}
-
-/** Clamp helper. */
-function clamp100(n: number): number {
-  return Math.max(0, Math.min(100, Math.round(n)))
-}
-
-/** Blend natal personality (0.6) with the live horizon signal (0.4). */
-function blend(natal: number, live: number): number {
-  return clamp100(natal * 0.6 + live * 0.4)
-}
-
-/** Per-domain score: natal baseline + live element signal from a horizon. */
-function scoreFor(natal: Tally, hzElement: Tally | undefined, domain: DashboardDomain): number {
-  const el = DOMAIN_ELEMENT[domain]
-  const base = shareToScore(elShare(natal, el))
-  const live = hzElement ? shareToScore(elShare(hzElement, el)) : base
-  return blend(base, live)
-}
-
-type Gender = 0 | 1
-
-/** Resolved engine gender: female → 0, everything else → 1 (documented default). */
-function genderOf(birth: BirthData): Gender {
-  return birth.gender === 'female' ? 0 : 1
-}
-
-/** Natal five-element tally from the birth's four pillars (stems weigh 2, branches 1). */
-function natalTally(birth: BirthData): Tally {
-  const pillars = computeFourPillars(birth)
-  const tally: Tally = { wood: 0, fire: 0, earth: 0, metal: 0, water: 0 }
-  const STEM_EL: Record<string, Element> = {
-    甲: 'wood', 乙: 'wood', 丙: 'fire', 丁: 'fire', 戊: 'earth',
-    己: 'earth', 庚: 'metal', 辛: 'metal', 壬: 'water', 癸: 'water',
-  }
-  const BRANCH_EL: Record<string, Element> = {
-    子: 'water', 丑: 'earth', 寅: 'wood', 卯: 'wood', 辰: 'earth', 巳: 'fire',
-    午: 'fire', 未: 'earth', 申: 'metal', 酉: 'metal', 戌: 'earth', 亥: 'water',
-  }
-  for (const p of [pillars.year, pillars.month, pillars.day, pillars.hour]) {
-    tally[STEM_EL[p.stem] ?? 'earth'] += 2
-    tally[BRANCH_EL[p.branch] ?? 'earth'] += 1
-  }
-  return tally
-}
-
-/** Tally from an elementScores record (ForecastHorizon.elementScores). */
-function tallyOf(el: ElementScores): Tally {
-  return { wood: el.wood, fire: el.fire, earth: el.earth, metal: el.metal, water: el.water }
-}
-
 /** All four per-domain scores in a given element tally. */
 function domainScores(natal: Tally, anchor: ForecastHorizon | undefined): number[] {
   const tib = anchor ? tallyOf(anchor.elementScores) : undefined
@@ -195,43 +129,6 @@ function buildDetails(domain: DashboardDomain, score: number): readonly EngineDe
         ? 'Sinyal netral, belum ada momentum kuat.'
         : 'Elemen penekan cukup menonjol, waspadai hambatan.'
   return ENGINE_LABELS.map((engine) => ({ engine, domain, vote, weight: 0.6, alasanSingkat }))
-}
-
-/* ---- Indonesian date helpers (no locale API, deterministic) ---- */
-
-const DAYS_LONG = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'] as const
-const DAYS_SHORT = ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'] as const
-const MONTHS_SHORT = [
-  'Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des',
-] as const
-
-const pad2 = (n: number): string => String(n).padStart(2, '0')
-
-function isoOfDate(d: Date): string {
-  return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`
-}
-
-function addDaysISO(iso: string, n: number): string {
-  const [y, m, d] = iso.split('-').map(Number)
-  const dt = new Date(Date.UTC(y!, m! - 1, d! + n))
-  return `${dt.getUTCFullYear()}-${pad2(dt.getUTCMonth() + 1)}-${pad2(dt.getUTCDate())}`
-}
-
-function weekdayIndex(iso: string): number {
-  const [y, m, d] = iso.split('-').map(Number)
-  return new Date(Date.UTC(y!, m! - 1, d!)).getUTCDay()
-}
-
-function formatDateLabel(iso: string): string {
-  const [y, m, d] = iso.split('-').map(Number)
-  return `${DAYS_SHORT[weekdayIndex(iso)]}, ${d} ${MONTHS_SHORT[m! - 1]} ${y}`
-}
-
-function relativeLabelFor(dayIndex: number, iso: string): string {
-  if (dayIndex === 0) return 'Hari ini'
-  if (dayIndex === 1) return 'Besok'
-  if (dayIndex === 2) return 'Lusa'
-  return DAYS_LONG[weekdayIndex(iso)]!
 }
 
 /* ---- public builders ---- */

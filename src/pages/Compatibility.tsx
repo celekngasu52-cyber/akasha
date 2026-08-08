@@ -9,10 +9,11 @@
 // The form is duplicated from InputPage rather than shared because InputPage
 // emits a full submit-redirect; here we only need to build person B in place.
 // Pure logic lives in src/lib/compatibility.ts so it is unit-testable without
-// a DOM.
+// a DOM. The verdict display lives in ./compat/Verdict.tsx (mechanical split
+// of the original Compatibility.tsx — todo 1 F2 debt).
 
 import { useState, useMemo, useCallback, type KeyboardEvent, type ReactNode } from 'react'
-import { Button, Card, Badge } from '../components/ui'
+import { Button, Card } from '../components/ui'
 import type { BirthData } from '../core/birth/types'
 import {
   getCities,
@@ -25,32 +26,13 @@ import {
   type CityEntry,
 } from './input-utils'
 import { computeCompatibility, type CompatibilityResult } from '../lib/compatibility'
+import { Verdict } from './compat/Verdict'
 
 export interface CompatibilityProps {
   /** Person A — the current user's birth data. */
   birthDataA: BirthData
   /** Return to the dashboard. */
   onBack: () => void
-}
-
-/** Badge tone from a domain label — mirrors DomainCard.badgeTone. */
-function badgeTone(label: string): 'success' | 'warning' | 'danger' {
-  if (label === 'Tinggi') return 'success'
-  if (label === 'Sedang') return 'warning'
-  return 'danger'
-}
-
-/** Score color: 70+ success, 40-69 warning, <40 danger — matches dashboard. */
-function scoreColor(score: number): string {
-  if (score >= 70) return 'var(--aka-success)'
-  if (score >= 40) return 'var(--aka-warning)'
-  return 'var(--aka-danger)'
-}
-
-const TONE_LABEL: Record<CompatibilityResult['tone'], string> = {
-  harmonis: 'Harmonis',
-  netral: 'Netral',
-  menantang: 'Menantang',
 }
 
 const inputClass = [
@@ -300,75 +282,7 @@ export function Compatibility({
         </form>
       </Card>
 
-      {result ? (
-        <Card className="mt-6 p-6" raised>
-          <div className="flex items-center justify-between gap-3">
-            <h3 className="font-display text-xl" style={{ color: 'var(--aka-fg)' }}>
-              Skor Kecocokan
-            </h3>
-            <Badge
-              tone={
-                result.overall >= 70
-                  ? badgeTone('Tinggi')
-                  : result.overall >= 40
-                    ? badgeTone('Sedang')
-                    : badgeTone('Rendah')
-              }
-            >
-              {TONE_LABEL[result.tone]}
-            </Badge>
-          </div>
-
-          <div className="mt-3 flex items-baseline gap-2">
-            <span
-              className="font-display text-4xl tabular-nums"
-              style={{ color: scoreColor(result.overall) }}
-            >
-              {result.overall}
-            </span>
-            <span className="font-mono text-sm" style={{ color: 'var(--aka-muted)' }}>
-              /100
-            </span>
-          </div>
-
-          <p className="mt-3 font-body text-sm" style={{ color: 'var(--aka-fg)' }}>
-            {result.relationNote}
-          </p>
-          {result.branchNote ? (
-            <p className="mt-1 font-body text-sm" style={{ color: 'var(--aka-fg)' }}>
-              {result.branchNote}
-            </p>
-          ) : null}
-          <p className="mt-3 font-body text-base" style={{ color: 'var(--aka-fg)' }}>
-            {result.tlDr}
-          </p>
-
-          <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
-            {result.domains.map((d) => (
-              <div
-                key={d.domain}
-                className={
-                  'flex items-center justify-between rounded-sm ' +
-                  'border-2 border-border bg-surface px-3 py-2'
-                }
-              >
-                <span className="font-body text-sm" style={{ color: 'var(--aka-fg)' }}>
-                  {d.domain}
-                </span>
-                <span className="flex items-center gap-2">
-                  <span
-                    className="font-mono text-sm tabular-nums"
-                    style={{ color: scoreColor(d.score) }}
-                  >
-                    {d.score}
-                  </span>
-                  <Badge tone={badgeTone(d.label)}>{d.label}</Badge>
-                </span>
-              </div>
-            ))}
-          </div>
-        </Card>
-      ) : null}
+      {result ? <Verdict result={result} /> : null}
     </div>
   )
 }
